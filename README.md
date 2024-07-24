@@ -140,6 +140,7 @@ nvm use v8.17.0
 To insert OpenStreetMap data we want to use some `*.lua` scripts from this repo.
 
 ```
+sudo -i -u oklab
 cd opt/oklab/git
 git clone https://github.com/gravitystorm/openstreetmap-carto.git
 python3 scripts/get-external-data.py --host=127.0.0.1 --database=oklab --username=oklab --port=5432
@@ -148,6 +149,7 @@ python3 scripts/get-external-data.py --host=127.0.0.1 --database=oklab --usernam
 Clone the [TileMill](https://tilemill-project.github.io/tilemill/) project from GitHub as `oklab` user and run setup.
 
 ```
+sudo -i -u oklab
 cd opt/oklab/git
 git clone https://github.com/tilemill-project/tilemill.git
 cd tilemill
