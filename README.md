@@ -9,7 +9,7 @@ German openstreetmap CartoCSS stylesheet for the Mapnik pre-processor developed 
 Install system dependencies and packages
 
 ```
-sudo apt install wget
+sudo apt install wget curl
 sudo apt install git git-lfs
 sudo apt install python3 python3-pip python3-venv
 sudo apt install gnupg2 gdal-bin ogr2ogr osm2pgsql
@@ -23,6 +23,11 @@ echo "deb [arch=amd64, signed-by=/etc/apt/trusted.gpg.d/postgresql-keyring.gpg] 
 
 sudo apt update
 sudo apt install postgresql-16 postgresql-16-postgis-3 postgresql-client-16
+
+curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+sudo apt install nodejs
+sudo npm install -g carto
 ```
 
 
@@ -68,8 +73,10 @@ Note since the `oklab`-user does not have superuser permissions you must login w
 
 ```
 \c oklab
-CREATE EXTENSION IF NOT EXISTS hstore;
 CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS hstore;
+ALTER TABLE geometry_columns OWNER TO oklab;
+ALTER TABLE spatial_ref_sys OWNER TO oklab;
 exit
 ```
 
@@ -83,7 +90,7 @@ It is recommanded to download an OpenStreetMap data extract of your choise from 
 sudo -i -u oklab
 mkdir -p /opt/oklab/map
 cd /opt/oklab/map
-wget <geofabrik-download-link>
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
 ```
 
 
@@ -91,8 +98,8 @@ To import the OpenStreetMap data extract follow this steps, replace `<geofabrik-
 
 ```
 sudo -i -u oklab
-cd /opt/git/oklab/openstreetmap-carto
-osm2pgsql -G --hstore --style ./openstreetmap-carto.style --tag-transform-script openstreetmap-carto.lua -d oklab /opt/oklab/map/<geofabrik-download-filename>
+cd /opt/git/openstreetmap-carto
+osm2pgsql -G --hstore --style ./openstreetmap-carto.style --tag-transform-script openstreetmap-carto.lua -d oklab /opt/oklab/map/schleswig-holstein-latest.osm.pbf
 ```
 
 Now you should be ready to create some indexes
@@ -143,6 +150,7 @@ To insert OpenStreetMap data we want to use some `*.lua` scripts from this repo.
 sudo -i -u oklab
 cd opt/oklab/git
 git clone https://github.com/gravitystorm/openstreetmap-carto.git
+carto project.mml > project.xml
 python3 scripts/get-external-data.py --host=127.0.0.1 --database=oklab --username=oklab --port=5432
 ```
 
