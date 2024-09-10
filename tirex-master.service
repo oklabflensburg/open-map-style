@@ -1,0 +1,18 @@
+[Unit]
+Description=Master process of tirex rendering system
+Documentation=man:tirex-master
+After=network.target auditd.service
+Before=apache2.service
+
+[Service]
+RuntimeDirectory=tirex
+RuntimeDirectoryMode=0755
+ExecStart=/usr/bin/tirex-master -f -d
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+User=oklab
+Group=oklab
+
+[Install]
+WantedBy=multi-user.target
