@@ -12,7 +12,7 @@ Install system dependencies and packages
 sudo apt install wget curl
 sudo apt install git git-lfs
 sudo apt install python3 python3-pip python3-venv
-sudo apt install gnupg2 gdal-bin ogr2ogr osm2pgsql
+sudo apt install gnupg2 gdal-bin osm2pgsql
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor > postgresql-keyring.gpg
 sudo mv postgresql-keyring.gpg /etc/apt/trusted.gpg.d/
