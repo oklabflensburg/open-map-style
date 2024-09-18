@@ -90,7 +90,7 @@ It is recommanded to download an OpenStreetMap data extract of your choise from 
 sudo -i -u oklab
 mkdir -p /opt/oklab/map
 cd /opt/oklab/map
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+wget https://download.geofabrik.de/europe/germany/<geofabrik-download-filename>
 ```
 
 
@@ -150,6 +150,7 @@ To insert OpenStreetMap data we want to use some `*.lua` scripts from this repo.
 sudo -i -u oklab
 cd opt/oklab/git
 git clone https://github.com/gravitystorm/openstreetmap-carto.git
+cd openstreetmap-carto.git
 carto project.mml > project.xml
 python3 scripts/get-external-data.py --host=127.0.0.1 --database=oklab --username=oklab --port=5432
 ```
