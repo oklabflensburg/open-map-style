@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map background-color="#fafafa" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Parameters>
+    <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
+    <Parameter name="center">0,0,2</Parameter>
+    <Parameter name="format"><![CDATA[png8]]></Parameter>
+    <Parameter name="minzoom">0</Parameter>
+    <Parameter name="maxzoom">22</Parameter>
+    <Parameter name="scale">1</Parameter>
+    <Parameter name="metatile">2</Parameter>
+    <Parameter name="id"><![CDATA[oklab]]></Parameter>
+    <Parameter name="_updated">1721503179000</Parameter>
+    <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
+    <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
+  </Parameters>
+  <Style filter-mode="first" name="countries">
+    <Rule>
+      <PolygonSymbolizer fill="#ffffff" />
+    </Rule>
+  </Style>
+  <Style filter-mode="first" name="countries-outline">
+    <Rule>
+      <LineSymbolizer stroke="#123123" stroke-linejoin="round" stroke-width="2" />
+    </Rule>
+  </Style>
+  <Layer name="countries" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName><![CDATA[countries-outline]]></StyleName>
+    <StyleName><![CDATA[countries]]></StyleName>
+    <Datasource>
+      <Parameter name="file"><![CDATA[/opt/map/metism/shape/10m-admin-0-countries.shp]]></Parameter>
+      <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="landuse-landuse">
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'military')]]></Filter>
+      <PolygonSymbolizer fill="#f7f8f6" />
+    </Rule>
+  </Style>
+  <Style filter-mode="first" name="landuse">
+    <Rule>
+      <MaxScaleDenominator>50000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'reserve')]]></Filter>
+      <LineSymbolizer stroke="#d6ecc7" stroke-width="1" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>50000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'reserve')]]></Filter>
+      <LineSymbolizer stroke="#d6ecc7" stroke-width="0.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'theme_park')]]></Filter>
+      <LineSymbolizer stroke="#f1ece6" stroke-dasharray="9, 3" stroke-opacity="0.6" stroke-width="2.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'theme_park')]]></Filter>
+      <LineSymbolizer stroke="#f1ece6" stroke-dasharray="9, 3" stroke-opacity="0.6" stroke-width="1.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'parking')]]></Filter>
+      <PolygonSymbolizer fill="#ebebec" />
+      <LineSymbolizer stroke="#d1d1d3" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'parking')]]></Filter>
+      <PolygonSymbolizer fill="#ebebec" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'university')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+      <LineSymbolizer stroke="#d4e3e3" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>200000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'university')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'kindergarten')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+      <LineSymbolizer stroke="#d4e3e3" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>200000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'kindergarten')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'school')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+      <LineSymbolizer stroke="#d4e3e3" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>200000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'school')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'college')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+      <LineSymbolizer stroke="#d4e3e3" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>200000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'college')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>50000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'greenhouse_horticulture')]]></Filter>
+      <PolygonSymbolizer fill="#d6f1e2" fill-opacity="0.2" />
+      <LineSymbolizer stroke="#d6f1e2" stroke-opacity="0.4" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>50000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'greenhouse_horticulture')]]></Filter>
+      <PolygonSymbolizer fill="#d6f1e2" fill-opacity="0.2" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([landuse] = 'embankment')]]></Filter>
+      <PolygonSymbolizer fill="#e3cfcf" />
+      <LineSymbolizer stroke="#ab6e6e" stroke-width="0.4" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'track')]]></Filter>
+      <PolygonSymbolizer fill="#e1d7d1" />
+      <LineSymbolizer stroke="#a58674" stroke-width="0.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'stadium')]]></Filter>
+      <PolygonSymbolizer fill="#f3f3f3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'pitch')]]></Filter>
+      <PolygonSymbolizer fill="#f3f3f3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'sports_centre')]]></Filter>
+      <PolygonSymbolizer fill="#f3f3f3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'aerodrome')]]></Filter>
+      <PolygonSymbolizer fill="#f7f6f5" fill-opacity="0.2" />
+      <LineSymbolizer stroke="#b3aaa0" stroke-width="0.2" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'hospital')]]></Filter>
+      <PolygonSymbolizer fill="#ebebec" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'place_of_worship')]]></Filter>
+      <PolygonSymbolizer fill="#dedddc" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'scrub')]]></Filter>
+      <PolygonSymbolizer fill="#d2e7c4" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'grass')]]></Filter>
+      <PolygonSymbolizer fill="#eafac8" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'landfill')]]></Filter>
+      <PolygonSymbolizer fill="#f9f1ed" fill-opacity="0.7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'brownfield')]]></Filter>
+      <PolygonSymbolizer fill="#f9f1ed" fill-opacity="0.7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'construction')]]></Filter>
+      <PolygonSymbolizer fill="#e9dada" fill-opacity="0.7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'commercial')]]></Filter>
+      <PolygonSymbolizer fill="#fbfbfb" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'railway')]]></Filter>
+      <LineSymbolizer stroke="#e7e9e8" stroke-width="3" />
+      <PolygonSymbolizer fill="#e7e9e8" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'industrial')]]></Filter>
+      <PolygonSymbolizer fill="#fbfbfb" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'retail')]]></Filter>
+      <PolygonSymbolizer fill="#ececec" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'flowerbed')]]></Filter>
+      <PolygonSymbolizer fill="#d1efd7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'village_green')]]></Filter>
+      <PolygonSymbolizer fill="#d1efd7" fill-opacity="0.5" />
+      <LineSymbolizer stroke="#93bf66" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'village_green')]]></Filter>
+      <PolygonSymbolizer fill="#d1efd7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'recreation_ground')]]></Filter>
+      <LineSymbolizer stroke="#bf8686" stroke-width="0.3" />
+      <PolygonSymbolizer fill="#d9f1e5" fill-opacity="0.6" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'recreation_ground')]]></Filter>
+      <PolygonSymbolizer fill="#d9f1e5" fill-opacity="0.6" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'farmland')]]></Filter>
+      <PolygonSymbolizer fill="#bbdbb1" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'paddy')]]></Filter>
+      <PolygonSymbolizer fill="#bbdbb1" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'plant_nursery')]]></Filter>
+      <PolygonSymbolizer fill="#fdf3ee" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'farmyard')]]></Filter>
+      <PolygonSymbolizer fill="#fdf3ee" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'forest')]]></Filter>
+      <PolygonSymbolizer fill="#d4e8d1" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'garden')]]></Filter>
+      <PolygonSymbolizer fill="#ffffff" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'allotments')]]></Filter>
+      <PolygonSymbolizer fill="#ffffff" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'common')]]></Filter>
+      <PolygonSymbolizer fill="#f3eeec" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'greenfield')]]></Filter>
+      <PolygonSymbolizer fill="#f3eeec" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'park')]]></Filter>
+      <PolygonSymbolizer fill="#d9f1e5" fill-opacity="0.6" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'orchard')]]></Filter>
+      <PolygonSymbolizer fill="#eafac8" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'meadow')]]></Filter>
+      <PolygonSymbolizer fill="#eafac8" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'garages')]]></Filter>
+      <PolygonSymbolizer fill="#deddcc" fill-opacity="0.2" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'residential')]]></Filter>
+      <PolygonSymbolizer fill="#fbfbfb" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'cemetery')]]></Filter>
+      <PolygonSymbolizer fill="#e1eccb" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'graveyard')]]></Filter>
+      <PolygonSymbolizer fill="#e1eccb" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'vineyard')]]></Filter>
+      <PolygonSymbolizer fill="#edeeee" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'quarry')]]></Filter>
+      <LineSymbolizer stroke="#ebebe2" stroke-width="0.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'parish')]]></Filter>
+      <PolygonSymbolizer fill="#dedddc" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'recreation_groun')]]></Filter>
+      <PolygonSymbolizer fill="#f4eaea" />
+      <LineSymbolizer stroke="#bf8686" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'playground')]]></Filter>
+      <PolygonSymbolizer fill="#f4eaea" />
+      <LineSymbolizer stroke="#bf8686" stroke-width="0.3" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'swimming_pool')]]></Filter>
+      <PolygonSymbolizer fill="#c0d8ff" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'reservoir')]]></Filter>
+      <PolygonSymbolizer fill="#c0d8ff" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'harbour')]]></Filter>
+      <PolygonSymbolizer fill="#c0d8ff" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'basin')]]></Filter>
+      <PolygonSymbolizer fill="#c0d8ff" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'education')]]></Filter>
+      <PolygonSymbolizer fill="#f3f7f7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'fairground')]]></Filter>
+      <PolygonSymbolizer fill="#f7f3f6" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'depot')]]></Filter>
+      <PolygonSymbolizer fill="#f3f5f7" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'port')]]></Filter>
+      <PolygonSymbolizer fill="#dcdcdc" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>400000</MaxScaleDenominator>
+      <Filter><![CDATA[([landuse] = 'market_place')]]></Filter>
+      <PolygonSymbolizer fill="#f6f1e8" />
+    </Rule>
+  </Style>
+  <Layer name="landuse" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName><![CDATA[landuse]]></StyleName>
+    <StyleName><![CDATA[landuse-landuse]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(SELECT landuse, way FROM planet_osm_polygon WHERE landuse IS NOT NULL AND ST_Intersects(way, ST_MakeEnvelope(1039573,7310277,1059781,7330653, 3857))) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[703972.092181235,7003538.137326813,1299364.0658625353,7456118.687191764]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[127.0.0.1]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="building">
+    <Rule>
+      <Filter><![CDATA[([building] = 'historic')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#ff0000" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'windmill')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'tower')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'tent')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'ruins')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'roof')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'military')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'guardhouse')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'container')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'construction')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'castle')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'bunker')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'beach_hut')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'silo')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'storage_tank')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'water_tower')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'transformer_tower')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'service')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'digester')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'parking')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'garages')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'garage')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'carport')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'shed')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'hut')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'hangar')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'boathouse')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'allotment_house')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'stadium')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'sports_hall')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'riding_hall')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'pavilion')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'grandstand')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'sty')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'stable')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'slurry_tank')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'greenhouse')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'farm_auxiliary')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'cowshed')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'conservatory')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'barn')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'university')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'transportation')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'train_station')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'toilets')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'school')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'public')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'museum')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'kindergarten')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'hospital')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'gatehouse')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'government')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'fire_station')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'college')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'civic')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'bridge')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'bakehouse')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'temple')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'synagogue')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'presbytery')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'mosque')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'monastery')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'kingdom_hall')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'chapel')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'cathedral')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'religious')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'warehouse')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'supermarket')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'retail')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'office')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'kiosk')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'industrial')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'commercial')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'tree_house')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'terrace')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'static_caravan')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'semidetached_house')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'residential')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'houseboat')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'house')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'hotel')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'ger')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'farm')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'dormitory')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'detached')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'cabin')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'bungalow')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([building] = 'barracks')]]></Filter>
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+      <PolygonSymbolizer fill="#5a5a56" />
+    </Rule>
+    <Rule>
+      <PolygonSymbolizer fill="#5a5a56" />
+      <LineSymbolizer stroke="#d8d8d7" stroke-width="1" />
+    </Rule>
+  </Style>
+  <Layer name="building" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" status="off">
+    <StyleName><![CDATA[building]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(SELECT building, way FROM planet_osm_polygon WHERE building IS NOT NULL AND ST_Intersects(way, ST_MakeEnvelope(1039573,7310277,1059781,7330653, 3857))) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[703972.092181235,7003538.137326813,1299364.0658625353,7456118.687191764]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[127.0.0.1]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="building_historic">
+    <Rule>
+      <PolygonSymbolizer fill="#008000" />
+    </Rule>
+  </Style>
+  <Layer name="building_historic" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" status="off">
+    <StyleName><![CDATA[building_historic]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(SELECT building, way FROM planet_osm_polygon WHERE building IS NOT NULL AND ST_Intersects(way, ST_MakeEnvelope(1039573,7310277,1059781,7330653, 3857)) AND historic IS NOT NULL) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[703972.092181235,7003538.137326813,1299364.0658625353,7456118.687191764]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[127.0.0.1]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="named_building">
+    <Rule>
+      <TextSymbolizer face-name="DejaVu Sans Book"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+  </Style>
+  <Layer name="named_building" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" status="off">
+    <StyleName><![CDATA[named_building]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select p.building, p.military, p.historic, p.name, p.place, p.religion, p.railway, p.way from planet_osm_polygon p, vg250gem v where st_contains(st_transform(v.wkb_geometry, 4326), st_transform(p.way, 4326)) and v.gen = 'Flensburg' and v.gf = 4 and p.building is not null and p.name is not null) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[703972.092181235,7003538.137326813,1299364.0658625353,7456118.687191764]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[127.0.0.1]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+    </Datasource>
+  </Layer>
+</Map>
