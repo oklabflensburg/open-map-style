@@ -184,3 +184,36 @@ Projection string, as reference you may have a look at https://epsg.io/3857
 ```
 +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
 ```
+
+
+
+## Import Biotopkartierung Schleswig-Holstein
+
+```
+mkdir bksh
+cd bksh
+wget https://opendata.schleswig-holstein.de/data/lfu51/SH4_BKSH_Flaechen_gesamt.zip
+unzip SH4_BKSH_Flaechen_gesamt.zip
+ogr2ogr -f "PostgreSQL" PG:"dbname=oklab user=oklab port=5432 host=localhost" -lco GEOMETRY_NAME=geom -lco SPATIAL_INDEX=GIST -lco PRECISION=NO -s_srs SH4_BKSH_Flaechen_gesamt.prj -t_srs EPSG:4326 SH4_BKSH_Flaechen_gesamt.shp  -nlt POLYGON -nln sh_biotop -overwrite -skipfailures -update
+```
+
+
+## Insert meta codes from Biotopkartierung
+
+Make sure to have an enviroment (`touch .env`) file like this
+
+```
+DB_PASS=oklab
+DB_HOST=localhost
+DB_USER=oklab
+DB_NAME=oklab
+DB_PORT=5432
+```
+
+```
+cd tools
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 insert_biotope_meta.py --env ../.env --table sh_biotop_meta --source ../data/biotoptypen_standardliste.csv --verbose
+deactivate
+```

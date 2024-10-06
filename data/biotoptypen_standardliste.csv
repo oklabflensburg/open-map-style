@@ -1,0 +1,660 @@
+code,designation,bundesnaturschutzgesetz_30,bundesnaturschutzgesetz_21,biotopverordnung,ffh_lebensraumtypen,biotoptypen_code
+K,Küsten- und Meeresbiotope,,,,,
+KT,Tiefwasserbereiche von Nord- und Ostsee,,,,,
+KTh,Hartsubstratriff im Tiefwasser,6,,5.i,1170,KT
+KTa,"Artenreicher Kies, Grobsand bzw. Schill im Tiefwasser",6,,5.k,,KT
+KTy,Sonstiges Sediment im Tiefwasser,,,,,KT
+KF,Flachwasserbereiche von Nord- und Ostsee,,,,,
+KFf,Festgestein im Flachwasser,6,,5.i,1170,KF
+KFb,Makrophytenreiches Hartsubstratriff im Flachwasser,6,,5.h/5.i,1170,KF
+KFh,Makrophytenarmes Hartsubstratriff im Flachwasser,6,,5.i,1170,KF
+KFr,Sabellaria-Riff,6,,5.i,1170,KF
+KFw,Seemoos-Wiese,6,,5.i,1160,KF
+KFm,Sublitorale Muschelbank mit heimischen Arten,6,,5.i,1170,KF
+KFx,Sonstige sublitorale Muschelbank,6,,5.i,1170,KF
+KFa,"Artenreicher Kies, Grobsand bzw. Schill im Sublitoral",6,,5.k,1160,KF
+KFg,Sublitorale Seegraswiese,6,,5.h,1160,KF
+KFv,Sonstiger sublitoraler Makrophytenbestand,6,,5.h,1160,KF
+KFy,Sonstiges Flachwasser,,,,1160,KF
+KW,Nord- und Ostseewatten,,,,,
+KWf,Felswatt,6,,5.g,1170,KWx
+KWm,Eulitorale Muschelbank mit heimischen Arten,6,,5.g,1170,KWh
+KWx,Sonstige eulitorale Muschelbank,6,,5.g,1170,KWh
+KWg,Eulitorale Seegraswiese,6,,5.g,1140,KWh
+KWw,"Vegetationsfreies Schlick-, Sand- und Mischwatt",6,,5.g,1140,KWh
+KWp,Priel,6,,5.g,1140,KWh
+KS,"Strände, Spülsäume und Lagunen",,,,,
+KSa,Spülsaum mit einjähriger Vegetation,,,,1210,KSs
+KSv,Kiesstrand mit mehrjähriger Vegetation,,,,1220,KSs
+KSx,Treibsel-Spülsaum ohne eigenständige Vegetation,,,,,KSs
+KSs,Vegetationsfreier Strand,,,,,KSs
+KSe,Strandsee/Lagune,6,,5.e,*1150,KSe
+KQ,Quellerfluren und Pionierzonen der Salzwiese,,,,,
+KQs,Schlick-Queller-Gesellschaft,6,,5.g,1310,KWq
+KQr,Vorland-Queller-Gesellschaft,6,,5.g,1310,KWq
+KQd,Flugsand-Queller-Gesellschaft,6,,5.g,1310,KWq
+KQb,Dornmelden-Flur,6,,5.g,1310,KWq
+KQu,Strand-Soden-Gesellschaft,6,,5.g,1310,KWq
+KQn,Komplexbiotop aus Pionier- und Salzwiesenvegetation,6,,5.f,1330,KN
+KN,Untere Salzwiese,,,,,
+KNs,Schlickgras-Bestand,6,,5.g,1320,KWh
+KNa,Strand-Aster-Flur,6,,5.f,1330,KN
+KNh,Strand-Salzmelden-Flur,6,,5.f,1330,KN
+KNv,Andel-Rasen mit Vorlandqueller-Flur,6,,5.f,1330,KN
+KNd,Andel-Rasen mit Salzschwaden-Flur,6,,5.f,1330,KN
+KNw,Andel-Rasen auf Strandwall,6,,5.f,1330,KN
+KNp,Sonstige Andel-Rasen,6,,5.f,1330,KN
+KNk,Komplex aus unterer und oberer Salzwiese,6,,5.f,1330,KN
+KNx,Salzwiese mit gestörter Vegetation,6,,5.f,1330,KN
+KNo,"Salzwiese, vegetationslos",6,,5.f,1330,KN
+KNt,Offene Wasserfläche innerhalb der Salzwiese,6,,5.f,1330,KN
+KNy,"Untere Salzwiese, unspezifisch",6,,5.f,1330,KN
+KO,Obere Salzwiese,,,,,
+KOa,Straußgras-Rasen,6,,5.f,1330,KN
+KOc,Strand-Seggen-Rasen,6,,5.f,1330,KN
+KOd,Strand-Kriech-Quecken-Rasen,6,,5.f,1330,KN
+KOq,Strand-Quecken-Rasen,6,,5.f,1330,KN
+KOw,Salzwiesen-Rotschwingel-Rasen auf Strandwällen,6,,5.f,1330,KN
+KOf,Salzwiesen-Rotschwingel-Rasen,6,,5.f,1330,KN
+KOj,Bodden-Binsen-Rasen,6,,5.f,1330,KN
+KOl,Strand-Melden-Fluren,6,,5.f,1330,KN
+KOm,Strand-Binsen-Ried,6,,5.f,1330,KN
+KOo,Hauhechel-Salzrasen,6,,5.f,1330,KN
+KOp,Spieß-Melden-Gesellschaft,6,,5.f,1330,KN
+KOs,Strand-Mastkraut-Rasen,6,,5.f,1330,KN
+KOt,Strand-Beifuß-Flur,6,,5.f,1330,KN
+KOh,ruderalisierte Salzwiese mit Ackerkratzdistel,6,,5.f,1330,KN
+KOr,ruderalisierte Salzwiese,6,,5.f,1330,KN
+KOy,"Obere Salzwiese, unspezifisch",6,,5.f,1330,KN
+KB,Brackwasser-Pioniervegetation,,,,,
+KBc,Laugenblumen-Flur,6,,5.f,1330,KNr
+KBe,Quellried-Flur,6,,5.f,1330,KNr
+KBr,Sumpfbinsen-Flur,6,,5.f,1330,KNr
+KBp,Kleine Sumpfbinsen-Flur,6,,5.f,1330,KNr
+KR,Brackwasser-Röhrichte,,,,,
+KRs,Schilf-Brackwasserröhricht,6,,5.f,1330,KNr
+KRb,Brackwasser-Simsenried,6,,5.f,1330,KNr
+KRg,Brackwasser-Wasserschwaden-Röhricht,6,,5.f,1330,KNr
+KRy,Sonstiges Brackwasserröhricht,6,,5.f,1330,KNr
+KG,Brackwasserbeeinflusste Grünländer,,,,,
+KGf,Brackwasser-Flutrasen,6,,5.f,1330,KN
+KGg,Brackwasser-Weidelgras-Weißklee-Weide,6,,5.f,1330,KNg
+KGy,Sonstiges brackwasserbeeinflusstes Grünland,6,,5.f,1330,KNg
+KP,Pioniervegetation der Küstendünentäler,,,,,
+KPc,Küstendünental mit Strand-Tausendgüldenkraut-Rasen,6,,5.c,2190,KDt
+KPi,Küstendünental mit Sumpf-Bärlapp-Rasen,6,,5.c,2190,KDt
+KPl,Küstendünental mit Strandlings-Rasen,6,,5.c,2190,KDt
+KPr,Küstendünental mit Zwergflachs-Rasen,6,,5.c,2190,KDt
+KPy,Küstendünental mit sonstiger Pioniervegetation,6,,5.c,2190,KDt
+KM,Feuchtvegetation der Küstendünentäler,,,,,
+KMy,"Küstendünental, vegetationslos",6,,5.c,2190,KDt
+KMf,Küstendünengewässer mit Vegetation,6,,5.c,2190,KDt
+KMr,Küstendünen-Schilf-Röhricht,6,,5.c,2190,KDt
+KMm,Küstendünental mit Braun-Seggen-Sumpf,6,,5.c,2190,KDt
+KMt,Küstendünenfeuchtheide,6,,5.c,2190,KDt
+KMh,Küstendünental mit Staudenflur,6,,5.c,2190,KDt
+KMw,Küstendünen-Weiden-Gebüsch,6,,5.c,2190,KD
+KMb,Küstendünen-Birken-Feuchtwald,6,,5.c,2180,KD
+KMe,Küstendünen-Erlen-Feuchtwald,6,,5.c,2180,KD
+KD,Gehölzfreie Küstendünen,,,,,
+KDx,Küstenschutzdüne,6,,5.c,(2110),KD
+KDo,vegetationsfreier Küstendünenbereich,6,,5.c,(21**),KD
+KDv,Küsten-Primärdüne,6,,5.c,2110,KD
+KDm,Wanderdüne,6,,5.c,2120,KD
+KDw,Strandhafer-Weißdüne,6,,5.c,2120,KD
+KDl,Strandroggen-Weißdüne,6,,5.c,2120,KD
+KDe,Braundüne mit Krähenbeere,6,,5.c,*2140,KD
+KDc,Braundüne mit Besenheide,6,,5.c,*2150,KD
+KDr,Ruderalisierte Küstendüne,6,,5.c,(21**),KD
+KDn,Küstendüne mit Borstgras-Rasen,6,,5.c,*6230,KD
+KDs,Komplex aus Dünen- und Salzwiesenvegetation,6,,5.c,*2130,KD
+KDg,"Graudüne, naturnah",6,,5.c,*2130,KD
+KDy,"Küstendüne, unspezifisch",6,,5.c,(21**),KD
+KH,Küstendünengehölze,,,,,
+KHh,Küstendüne mit Sanddorngebüsch,6,,5.c,2160,KD
+KHs,Küstendüne mit Kriechweidengebüsch,6,,5.c,2170,KD
+KHt,Bewaldete Küstendüne mit Zitterpappel,6,,5.c,2180,KD
+KHq,Bewaldete Küstendüne mit Eiche,6,,5.c,2180,KD
+KHp,Bewaldete Küstendüne mit Kiefer,6,,5.c,(2180),KD
+KHr,Küstendüne mit Kartoffelrose,6,,5.c,,KD
+KHx,Bewaldete KüstendDüne mit mehr als 30 % gebietsfremden Arten,6,,5.c,,KD
+KHg,Küstendüne mit sonstigen heimischen Gehölzen,6,,5.c,,KD
+W,Wälder und Brüche,,,,,
+WQ,Naturnahe Quellwälder,,,,,
+WQe,Naturnaher Quellwald,4,,4.c,*91E0,WA
+WA,Auwälder,,,,,
+WAn,Auwald mit hohem Nadelholzanteil,,,(4.c),,WA
+WAm,Auwald mit mittlerem Nadelholzanteil,4,,4.c,,WA
+WAp,Auwald mit Hybridpappeln,4,,(4.c),,WA
+WAx,Auwald mit sonstigen gebietsfremden Laubholzarten,4,,(4.c),,WA
+WAq,Hartholz (Eichen/Eschen/Ulmen)-Auwald,4,,4.c,91F0,WA
+WAw,Weichholz (Silberweiden)-Auwald,4,,4.c,*91E0,WA
+WAe,Erlen-Eschen (Eichen)-Auwald,4,,4.c,*91E0,WA
+WAy,Sonstiger Auwald,4,,4.c,,WA
+WB,Bruchwälder und Brüche,,,,,
+WBn,Bruchwald mit hohem Nadelholzanteil,,,,,WFp
+WBm,Bruchwald mit mittlerem Nadelholzanteil,4,,4.a,,WFp
+WBp,Bruchwald mit Hybridpappeln,4,,4.a,,WFp
+WBx,Sonstiger Bruchwald mit gebietsfremden Laubbaumarten,4,,4.a,,WFp
+WBz,Sonstiger Bruchwald mit Dominanz gebietsfremder Laubbaumarten,,,,,WFp
+WBb,Birken-Bruchwald,4,,4.a,,WBb
+WBe,Erlen-Bruchwald,4,,4.a,,WBe
+WBw,Weiden-Bruchwald,4,,4.a,,WBw
+WBy,Sonstiger Bruchwald,4,,4.a,,WBw
+WE,Sumpfwälder,,,,,
+WEn,Sumpfwald mit hohem Nadelholzanteil,,,,,WFp
+WEm,Sumpfwald mit mittlerem Nadelholzanteil,4,,4.b,,WFp
+WEp,Sumpfwald mit Hybridpappeln,4,,4.b,,WFp
+WEx,Sonstiger Sumpfwald mit gebietsfremden Laubbaumarten,4,,4.b,,WFp
+WEz,Sonstiger Sumpfwald mit Dominanz gebietsfremder Laubbaumarten,,,,,WFp
+WEw,Weiden-Sumpfwald,4,,4.b,,WE
+WEe,Erlen-Eschen-Sumpfwald,4,,4.b,,WE
+WEy,Sonstiger Sumpfwald,4,,4.b,,WE
+WT,Entwässerte Feuchtwälder,,,,,
+WTn,Entwässerter Feuchtwald mit hohem Nadelholzanteil,,,,,WE (t)
+WTm,Entwässerter Feuchtwald mit mittlerem Nadelholzanteil,,,,,WE (t)
+WTp,Entwässerter Feuchtwald mit Hybridpappeln,,,,,WE (t)
+WTx,Sonstiger entwässerter Feuchtwald mit gebietsfremden Laubholzarten,,,,,WE (t)
+WTw,Entwässerter Feuchtwald mit Weiden,,,,,WBe (t)
+WTb,Entwässerter Feuchtwald mit Birken,,,,,WBe (t)
+WTe,Entwässerter Feuchtwald mit Erlen und Eschen,,,,,WBe (t)
+WTy,Sonstiger entwässerter Feuchtwald,,,,,WE (t)
+WP,Pionierwälder,,,,,
+WPn,Pionierwald mit hohem Nadelholzanteil,,,,,WP
+WPm,Pionierwald mit mittlerem Nadelholzanteil,,,,,WP
+WPp,Pionierwald mit Hybridpappeln,,,,,WP
+WPs,Pionierwald mit Später Traubenkirsche,,,,,WP
+WPx,Pionierwald mit sonstigen gebietsfremden Laubgehölzen,,,,,WP
+WPb,Pionierwald mit Zitter-Pappel/Hänge-Birke,,,,"(9110, 9190)",WP
+WPa,Pionierwald mit Ahorn,,,,"(9130, 9180)",WP
+WPe,Pionierwald mit Erlen/Eschen,,,,"(9160, *91E0)",WP
+WPw,Pionierwald mit Weiden,,,,(91**),WP
+WPy,Sonstiger Pionierwald,,,,(91**),WP
+WM,Laubwälder auf reichen Böden,,,,,
+WMc,Eichen- und Eichen-Hainbuchenwald,,,,9160,WNc
+WMs,Schlucht- und Hangwald,4,,4.d,*9180,WM
+WMu,Waldgersten-Buchenwald,,,,9130,WM
+WMe,Eschen-Buchenwald,,,,9130,WM
+WMo,Perlgras-Buchenwald,,,,9130,WM
+WMm,Flattergras-Buchenwald,,,,9130,WM
+WMx,Laubholzforst auf reichen Böden mit gebietsfremden Laubgehölzen,,,,,WFl
+WMy,Sonstiger Laubwald auf reichen Böden,,,,"(9130, 9160)",WFl
+WL,Laubwälder auf bodensauren Standorten einschließlich natürlicher Eichen-Kiefernwälder,,,,,
+WLi,Buchenwald auf bodensauren Standorten mit Stechpalme,,,,9120,WLa
+WLa,Drahtschmielen-Buchenwald,,,,9110,WLa
+WLb,Birken-Eichenwald,,,,9190,WLb
+WLq,Eichenwald und Eichen-Buchenwald auf bodensauren frischen Standorten,,,,9190,WLb
+WLf,Eichenwald auf bodensauren feuchten Standorten,,,,9190,WLb
+WLt,Eichenwald und Eichenkratt bodensaurer trockenwarmer Standorte,3,,3.e,9190,WLb
+WLk,Traubeneichen-Kiefernwald,3,,3.e,9190,WLp
+WLs,Wald- oder Forstfläche auf bodensauren Standorten mit Später Traubenkirsche,,,,,WFl
+WLx,Laubholzforst auf bodensauren Standorten mit gebietsfremden Laubgehölzen,,,,,WFl
+WLy,Sonstiger Laubwald auf bodensauren Standorten,,,,"(9110, 9190)",WLa
+WF,Nadelholzforste und Mischwälder auf frischen Standorten,,,,,
+WFn,Nadelholzforst,,,,,WFn
+WFm,Mischwald,,,,,WFm
+H,Gehölze außerhalb von Wäldern,,,,,
+HE,Einzelgehölze und Gehölzgruppen,,,,,
+HEo,Obstbaum,,,,,HGb (A)
+HEw,Weidenbusch,,,,,HGb (A)
+HEn,Nadelbaum,,,,,HGb (A)
+HEx,Gebietsfremdes Laubgehölz,,,,,HGb (A)
+HEy,Sonstiges heimisches Laubgehölz,,,,,HGb (A)
+HA,Alleen,,,,,
+HAo,Obstbaumallee,,3,8,,HGa (S)
+HAx,Allee aus gebietsfremden Laubgehölzen,,3,8,,HGa (S)
+HAy,Allee aus heimischen Laubgehölzen,,3,8,,HGa (S)
+HR,Baumreihen,,,,,
+HRo,Obstbaumreihe,,,,,HGr (S)
+HRx,Baumreihe aus gebietsfremden Laubbäumen,,,,,HGr (S)
+HRn,Baumreihe aus Nadelhölzern,,,,,HGr (S)
+HRy,Baumreihe aus heimischen Laubbäumen,,,,,HGr (S)
+HU,Linearer Ufergehölzsaum,,,,,
+HUe,Linearer Ufergehölzsaum aus Schwarz-Erle/Esche,,,,,HGf
+HUw,Linearer Ufergehölzsaum aus Weiden,,,,,HGf
+HUx,Linearer Ufergehölzsaum aus gebietsfremden Gehölzarten,,,,,HGx
+HUy,Sonstiger linearer Ufergehölzsaum,,,,,HGy
+HW,Knicks,,,,,
+HWb,Durchgewachsener Knick,,4,10,,HW (S)
+HWo,Knickwall ohne Gehölze,,4,10,,HW (S)
+HWw,Knicks im Wald und am Waldrand,,,,,HW (S)
+HWx,Knickwall mit gebietsfremden Gehölzen,,4,10,,HW (S)
+HWy,Typischer Knick,,4,10,,HW (S)
+HWz,Sonstiger Knick,,,,,HW (S)
+HF,Feldhecken,,,,,
+HFb,Baumhecke,,4,10,,HF (S)
+HFx,Feldhecke mit gebietsfremden Gehölzen,,4,10,,HF (S)
+HFz,Sonstige Feldhecken,,,,,HF (S)
+HFy,Typische Feldhecke,,4,10,,HF (S)
+HB,Gebüsche,,,,,
+HBw,Weidengebüsch außerhalb von Gewässern,,,,,WGf
+HBx,Gebüsch aus gebietsfremden Arten,,,,,WGf
+HBt,Trockengebüsch,3,,3.e,,WGt
+HBy,Sonstiges Gebüsch,,,,,WGf
+HG,Feldgehölze,,,,,
+HGn,Feldgehölz mit hohem Nadelholzanteil,,,,,HGx
+HGm,Feldgehölz mit mittlerem Nadelholzanteil,,,,,HGx
+HGp,Feldgehölz aus Hybridpappeln,,,,,HGx
+HGs,Feldgehölz aus Später Traubenkirsche,,,,,HGx
+HGx,Feldgehölz aus gebietsfremden Arten,,,,,HGx
+HGe,Feldgehölz aus Erlen,,,,,HGy
+HGy,Sonstiges Feldgehölz,,,,,HGy
+F,Binnengewässer,,,,,
+FW,Süßwasserwatten und -priele,,,,,
+FWp,Ehemaliger Priel,1,,1.a,"(3150, 3260)",FFw
+FWo,"Süßwasserwatt, vegetationslos",1,,1.a,,FFw
+FWs,Süßwasserwatt mit Schilfröhricht,1,,1.a,,FFw
+FWg,Süßwasserwatt mit Wasserschwadenröhricht,1,,1.a,,FFw
+FWb,Süßwasserwatt mit Simsenröhricht,1,,1.a,,FFw
+FWy,Sonstiges Süßwasserwatt,1,,1.a,,FFw
+FF,Flüsse einschließlich Altarme,,,,,
+FFa,Fluss-Altarm,1,,1.b bzw. 7,(3150),FFa
+FFf,"Fluss, naturnah mit flutender Vegetation",1,,1.a,3260,FFn
+FFs,"Fluss, naturnah, mit Sand- und/oder Schlammbänken",1,,1.a,3270,FFn
+FFg,Ausgebauter Fluss mit flutender Vegetation,,,,3260,FFn
+FFn,Sonstiger naturnaher Fluss,1,,1.a,,FFn
+FFt,"Fluss mit Regelprofil, ohne technische Uferverbauung",,,,,FFx
+FFx,Sonstiger naturferner Fluss,,,,,FFx
+FB,Bäche einschließlich Altarme,,,,,
+FBa,Bach-Altarm,1,,1.b bzw. 7,(3150),FBa
+FBf,"Bach, naturnah mit flutender Vegetation",1,,1.a,3260,FBn
+FBg,Ausgebauter Bach mit flutender Vegetation,,,,3260,FBx
+FBn,Sonstiger naturnaher Bach,1,,1.a,,FBn
+FBt,"Bach mit Regelprofil, ohne technische Uferverbauung",,,,,FBx
+FBx,Sonstiger naturferner Bach,,,,,FBx
+FL,Naturnahe lineare Gewässer,,,,,
+FLk,"Kanal, naturnah",1,,1.b,3150,FG
+FLg,"Grüppe, naturnah",,,,,FG
+FLa,Naturnahes lineares Gewässer mit Stillgewässercharakter,1,,1.b,3150,FG
+FLf,Naturnahes lineares Gewässer mit flutender Vegetation,,,,3260,FG
+FLw,Naturnahes lineares Gewässer mit Gehölzen,,,,,FG
+FLr,Naturnahes lineares Gewässer mit Röhrichten,2,,2.c,,FG
+FLs,Naturnahes lineares Gewässer mit Sumpfvegetation,2,,2.b,,FG
+FLn,Naturnahes lineares Gewässer mit Großseggen,2,,2.g,,FG
+FLy,Sonstiges naturnahes lineares Gewässer,,,,,FG
+FG,Gräben,,,,,
+FGg,Grüppe,,,,,FG
+FGt,Graben ohne regelmäßige Wasserführung,,,,,FG
+FGx,Verbauter Graben,,,,,FG
+FGy,Sonstiger Graben,,,,,FG
+FU,Umgestaltete Fließgewässer und Umflutgerinne,,,,,
+FUb,Bach-Renaturierungsstrecke,1,,1.a, (3260),FBn
+FUg,Umflutgerinne,1,,1.a, (3260),FBn
+FUf,Fluss-Renaturierungsstrecke,1,,1.a, (3260),FFn
+FUx,"Fließgewässer-Renaturierungsstrecke, naturfern",,,, (3260),"FFx, FBx"
+FK,Kleingewässer,,,,,
+FKd,Dystrophes Kleingewässer,1,,7,3160,FK
+FKo,Oligotrophes basenarmes Kleingewässer,1,,7,3110,FK
+FKi,Oligo- bis mesotrophes Kleingewässer mit Strandlings- oder Zwergbinsengesellschaften,1,,7,3130,FK
+FKm,"Oligo- bis mesotrophes Kleingewässer, kalkhaltig",1,,7,3140,FK
+FKe,Eutrophes Kleingewässer,1,,7,3150,FK
+FKx,Hypertrophes Kleingewässer,1,,7,,FK
+FKy,Sonstiges Kleingewässer,1,,7,,FK
+FS,Größere Stillgewässer,,,,,
+FSk,Kooggewässer,1,,1.b,,FW
+FSd,Dystrophes Stillgewässer,1,,1.b,3160,FS
+FSo,Oligotrophes basenarmes Stillgewässer,1,,1.b,3110,FS
+FSi,Oligo- bis mesotrophes Stillgewässer mit Strandlings- oder Zwergbinsengesellschaften,1,,1.b,3130,FS
+FSm,"Oligo- bis mesotrophes Stillgewässer, kalkhaltig",1,,1.b,3140,FS
+FSe,Eutrophes Stillgewässer,1,,1.b,3150,FS
+FSx,Hypertrophes Stillgewässer,1,,1.b,,FS
+FSy,Sonstiges Stillgewässer,1,,1.b,,FS
+FSs,Naturfernes aber nicht künstliches Stillgewässer,,,,31**,FS
+FX,"Künstliches, durch Nutzung geprägtes Gewässer",,,,,
+FXk,Kanal,,,,,FG
+FXt,Fischteich,,,,(31**),FX
+FXb,Abbaugewässer,,,,,FX
+FXz,Zierteiche,,,,,FX
+FXx,"Technisches Gewässer, verbaut",,,,,FX
+FXu,"Technisches Gewässer, naturfern",,,,,FX
+FXy,"Technisches Gewässer, naturnah",,,,,FX
+M,Hoch- und Übergangsmoore,,,,,
+MH,Moorheidestadien,,,,,
+MHc,Moor-Besenheide,2,,2.a,7120,MH
+MHe,"Moor-Glockenheide, trockene Ausbildung",2,,2.a,7120,MH
+MHs,"Moor-Glockenheide, nasse Ausbildung",2,,2.a,7120,MH
+MHy,Sonstige Moorheide,2,,2.a,7120,MH
+MS,Naturnahe Moorstadien,,,,,
+MSg,Moorgewässer,2,,2.a,3160,MH
+MSr,Schlenkengesellschaft,2,,2.a,7150,MH
+MSt,Schwingdecken,2,,2.a,"7120, 7140",MH
+MSz,Bultgesellschaften,2,,2.a,"7120, 7140",MH
+MSs,Bult-Schlenken-Komplex,2,,2.a,"7120, 7140",MH
+MSy,Sonstiges naturnahes Moorstadium,2,,2.a,"7120, 7140",MH
+MW,"Moorwälder, torfmoosreiche baumbestandene Moorstadien",,,,,
+MWb,Atlantischer Birkenmoorwald,2,,2.a,*91D0,MH
+MWk,Subkontinentaler Kiefernmoorwald,2,,2.a,*91D0,WBk
+MWs,Torfmoosreicher sekundärer Moorwald,2,,2.a,*91D0,MH
+MA,Abtorfungsbereiche,,,,,
+MAt,Episodisch austrocknende vegetationsfreie Abtorfungsfläche,,,,,MHx
+MAf,Ganzjährig feuchte vegetationsfreie Abtorfungsfläche,,,,,MHx
+MD,Degenerierte Moorflächen,,,,,
+MDb,Trockener sekundärer Moorwald,2,,2.a,(7120),MH
+MDm,Degenerierte Moorflächen mit Pfeifengras,2,,2.a,"(7120, 7140)",MH
+MDg,Degenerierte Moorflächen mit Gagelgebüsch,2,,2.a,"(7120, 7140)",WBg
+MDw,Weidengebüsch auf degenerierten Moorstandorten,2,,2.a,"(7120, 7140)",MH
+MDe,Degenerierte Moorflächen mit Wollgras,2,,2.a,"(7120, 7140)",MH
+MDy,Degenerierte Moorflächen anderer Ausprägung,2,,2.a,"(7120, 7140)",MH
+MR,Moor-Regenerationskomplexe,,,,,
+MRe,"Moorregenerationsbereich mit Wollgräsern, torfmoosreich",2,,2.a,"(7120, 7140)",MH
+MRg,"Moorregenerationsbereich mit Gagelgebüsch, torfmoosreich",2,,2.a,"(7120, 7140)",MH
+MRb,"Moorregenerationsbereich mit Moor-Birken, torfmoosreich",2,,2.a,"(7120, 7140)",MH
+MRm,"Moorregenerationsbereich mit Pfeifengras, torfmoosreich",2,,2.a,"(7120, 7140)",MH
+MRs,"Moorregenerationsbereich mit Moorvegetation, torfmoosreich",2,,2.a,"7120, 7140",MH
+MRt,Torfstich ohne deutliche Vegetation,2,,2.a,"(7120, 7140)",MHx
+MRj,"Moorregenerationsbereich, nass, vegetationsarm",2,,2.a,"7120, 7140",MH
+MRw,"Weidengebüsch auf Moorstandort, nass, torfmoosreich",2,,2.a,"(7120, 7140)",MH
+MRy,Sonstige Moorregenerationsbereiche,2,,2.a,"(7120, 7140)",MH
+N,Sümpfe und Niedermoore sowie Salzstellen des Binnenlandes,,,,,
+NH,Salzvegetation des Binnenlandes,,,,,
+NHs,Naturnaher binnenländischer Salzsumpf,2,,2.f,*1340,NS
+NHy,Sonstige binnenländische Salzvegetation,2,,2.f,*1340,NS
+NS,Großseggen- und Simsenriede sowie sonstige Staudensümpfe,,,,,
+NSa,Nährstoffarmer Sumpf,2,,2.b,7140,NS
+NSb,"Basenreicher, nährstoffarmer Sumpf",2,,2.b,7230,NS
+NSs,Großseggenried,2,,2.g,,NSs
+NSj,Binsen- und Simsenried,2,,2.b,,NSb
+NSf,Flatterbinsen-Sumpf,,,,,NSb
+NSc,Sumpfreitgras-Sumpf,2,,2.b,"(7120, 7140)",NS
+NSq,Quellsumpf mit typischen Quellzeigern,2,,2.b,(6430),NS
+NSr,Staudensumpf,2,,2.b,,NSh
+NSy,Sonstiger Sumpf,2,,2.b,,NS
+NR,(Land-)Röhrichte,,,,,
+NRa,Nährstoffarmes Röhricht,2,,2.c,7140,NR
+NRc,Binsen-Schneide-Röhricht,2,,2.c,*7210,NR
+NRs,"Schilf-, Rohrkolben-, Teichsimsen-Röhricht",2,,2.c,,NR
+NRr,Rohrglanzgras-Röhricht,2,,2.c,,NR
+NRg,Wasser-Schwaden-Röhricht,2,,2.c,,NR
+NRb,Strandsimsen-Röhricht,2,,2.c,,NR
+NRy,Sonstiges Röhricht,2,,2.c,,NR
+T,"Trocken- und Heidevegetation, Borstgrasrasen und Steinstrukturen",,,,,
+TB,Trocken- und Zwergstrauchvegetation auf Binnendünen,,,,,
+TBa,Binnendüne mit Silbergras/Straußgras,3,,3.d,2330,XXd
+TBc,Binnendüne mit Besenheide und Ginster,3,,3.b,2310,XXd
+TBe,Binnendüne mit Besenheide/Krähenbeere,3,,3.b,2320,XXd
+TBd,Binnendüne mit Degenerationsstadien von Trocken- oder Zwergstrauchvegetation,3,,3.b/3.d ,"(2310, 2320, 2330)",XXd
+TBf,Feuchtvegetation der Binnendünentäler,3,,3.b,4010,
+TF,Feuchtheiden,,,,,THf
+TFd,Vergraste Feuchtheide,3,,3.b,4010,THf
+TFg,Verbuschte Feuchtheide,3,,,4010,THf
+TFn,Feuchtheide mit Nadelwald,3,,3.b,4010,THf
+TFt,Typische Feuchtheide,3,,3.b,4010,THf
+TH,Trockene Sandheiden,,,,,
+THd,Vergraste Sandheide,3,,3.b,(4030),TH
+THg,Verbuschte Sandheide,,,,4030,TH
+THb,Stark verbuschte Sandheide,,,,(4030),TH
+THs,Sandheide mit Später Traubenkirsche,3,,3.b,4030,TH
+THt,Typische Sandheide,3,,3.b,4030,TH
+THx,Sandheide mit gebietsfremden Gehölzen,3,,3.b,4030,TH
+THw,Wacholderheiden,3,,3.b,5130,TH
+TR,Trocken- und Magerrasen,,,,,
+TRb,Blauschillergras-Rasen,3,,3.d,*6120,TR
+TRm,Naturnaher Kalktrockenrasen,3,,3.d,6210,TR
+TRn,Borstgrasrasen trockener Standorte,3,,3.c,*6230,TR
+TRj,Borstgrasrasen feuchter Standorte,3,,3.c,*6230,TR
+TRo,Orchideenreiche Kalktrockenrasen,3,,3.d,*6210,TR
+TRs,Lückiger Sandmagerrasen,3,,3.d,,TR
+TRh,Trockenrasen mit Staudenflur,3,,3.d,,TR
+TRy,Sonstiger Sandmagerrasen,3,,3.d,,TR
+TS,Steinstrukturen,,,,,
+TSe,Steinwall oder Steinmauer mit epilithischer Vegetation,7,3.j,,,
+TSo,Steinwall oder Steinmauer ohne epilithischer Vegetation,7,3.j,,,
+TSr,Steinriegel,7,3.i,,,
+TSs,Steinblock (terrestrisch),,,,,
+TSy,"Sonstige Steinwälle, -mauern und -haufen",,,,,
+G,Grünland,,,,,
+GN,Seggen- und binsenreiches Nassgrünland,,,,,
+GNp,Artenreiche Pfeifengraswiese,2,,2.d,6410,GN
+GNa,Nährstoff- und basenarmes Nassgrünland,2,,2.d,7140,GN
+GNb,"Nährstoffarmes, basenreiches Nassgrünland",2,,2.d,7230,GN
+GNm,Mäßig nährstoffreiches Nassgrünland,2,,2.d,"(7120, 7140)",GN
+GNr,Nährstoffreiches Nassgrünland,2,,2.d,,GN
+GNh,Hochstaudenreiches Nassgrünland,2,,2.d,(6430),GN
+GF,Artenreiches Feuchtgrünland,,,,,
+GFb,Brenndolden-Wiese,2 bzw. 7,(6),2.d bzw. 11.a,6440,GF
+GFc,Sumpfdotterblumen-Wiese,7 ,6,11.a,,GF
+GFf,Artenreicher Flutrasen,7 ,6,11.a,,GFf
+GFh,Hochstaudenreiches Feuchtgrünland an Waldrand oder Fließgewässer,7,6,11.a,6430,
+GFr,Sonstiges artenreiches Feuchtgrünland,7 ,6,11.a,,GF
+GM,Mesophiles Flachlandmähwiese ,,,,,
+GMf,Mesophiles Flachlandmähwiese feuchter Standorte,7 ,6,11.b,6510,GMm
+GMm,Mesophiles Flachlandmähwiese frischer Standorte,7 ,6,11.b,6510,GMm
+GMt,Mesophiles Flachlandmähwiese trockener Standorte,7 ,6,11.b,6510,GMm
+GW,Artenreiches mesophiles Grünland,,,,,
+GWf,Artenreiches mesophiles Grünland feuchter Standorte,7,6,11.a,,GMm
+GWm,Artenreiches mesophiles Grünland frischer Standorte,7,6,11.a,,GMm
+GWt,Artenreiches mesophiles Grünland trockener Standorte,7,6,11.a,,GMm
+GA,Artenarmes Wirtschaftsgrünland,,,,,
+GAe,Einsaatgrünland,,,,,GI
+GAy,Artenarmes Wirtschaftsgrünland,,,,,GI
+GY,Artenarmes bis mäßig artenreiches Grünland,,,,,
+GYj,Artenarmes bis mäßig artenreiches Grünland mit Flatterbinsen-Dominanzbeständen,,,,,GFf
+GYn,Artenarmer bis mäßig artenreicher Flutrasen,,,,,GFf
+GYf,Artenarmes bis mäßig artenreiches Feuchtgrünland,,,,,GFf
+GYy,Mäßig artenreiches Wirtschaftsgrünland,,,,,GI
+A,"Acker- und Gartenbauflächen, Baumschulen und Weihnachtsbaumplantagen",,,,,
+AA,Äcker,,,,,
+AAu,Ackerbrache mit Ackerunkrautflur,,,,,AAk
+AAw,Stilllegung mit Graseinsaat,,,,,AAk
+AAb,Ackerrandstreifen und PIK-Flächen,,,,,AAk
+AAj,Wildacker,,,,,AAk
+AAe,Extensivacker,,,,,AAe+
+AAy,Intensivacker,,,,,AA
+AG,Gartenbaufläche,,,,,
+AGb,Gartenbaufläche zum Blumenanbau,,,,,AG
+AGg,Gartenbaufläche zum Gemüseanbau,,,,,AG
+AGy,Sonstige Gartenbaufläche,,,,,AG
+AO,Obstanbauflächen,,,,,
+AOb,Beerenstrauchplantage,,,,,AO
+AOo,Intensiv genutzte Obstbaumplantage,,,,,AO
+AOw,Weinbaufläche,,,,,AO
+AOy,Sonstige Obstanbaufläche,,,,,AO
+AB,Baumschulen,,,,,
+ABw,Weihnachtsbaumplantage,,,,,ABw
+ABb,Sonstige Baumschule,,,,,ABb
+R,"Rohboden, Ruderal- und Pioniervegetation",,,,,
+RO,Rohboden,,,,,
+ROt,Rohboden auf trockenen Standorten,,,,,TRs
+ROf,"Rohboden auf nährstoffreichen, frischen Standorten",,,,,TRs
+ROn,Schlammflur auf nassen und wechselfeuchten Standorten,,,,,TRs
+RP,Pioniervegetation auf trockenen bis wechselfeuchten Standorten,,,,,
+RPa,Nährstoffarme Pionierflur wechselfeuchter Standorte,,,,,TRs
+RPr,Nährstoffreiche Pionierflur wechselfeuchter Standorte,,,,,TRs
+RPt,Nährstoffarme Pionierflur trockener Standorte,,,,,TRs
+RPe,Nährstoffreiche Pionierflur trockener Standorte,,,,,TRs
+RH,Ruderale Gras- und Staudenfluren,,,,,
+RHw,Feuchte Hochstaudenflur am Waldrand,,2,6,6430,NSh
+RHh,Staudenflur mittlerer bis trockener Standorte am Waldrand,,2,6,,
+RHu,"Uferstaudenflur an Flüssen, Bächen und an durchströmten Stillgewässern",1,,1.a,6430,NUs
+RHs,Feuchte Hochstaudenflur außerhalb amphibischer Uferbereiche stehender Binnengewässer,,2,6,,NSh
+RHf,Feuchte Hochstaudenflur,,,,,RHf
+RHm,Ruderale Staudenflur frischer Standorte,,,,,RHm
+RHt,Staudenfluren trockener Standorte,,,,,RHt
+RHg,Ruderale Grasflur,,,,,RHm
+RHp,Adlerfarnflur,,,,,RHm
+RHr,Brombeerflur,,,,,RHm
+RHn,Nitrophytenflur,,,,,RHn
+RHx,Neophytenflur,,,,,RHn
+RHy,Sonstige Ruderalfläche,,,,,RHm
+S,Biotoptypen in Zusammenhang mit baulichen Anlagen,,,,,
+SV,Verkehrsflächen,,,,,
+SVs,Vollversiegelte Verkehrsfläche,,,,,SVs
+SVt,Teilversiegelte Verkehrsfäche,,,,,SVs
+SVp,Spurplattenweg,,,,,SVs
+SVu,"Unversiegelter Weg mit und ohne Vegetation, Trittrasen",,,,,SVs
+SVi,"Bankette, intensiv gepflegt",,,,,SVs
+SVe,"Bankette, extensiv gepflegt",,,,,SVs
+SVo,Verkehrsflächenbegleitgrün ohne Gehölze,,,,,SV
+SVg,Verkehrsflächenbegleitgrün mit Gebüschen,,,,,SV
+SVh,Verkehrsflächenbegleitgrün mit Bäumen,,,,,SV
+SVb,Gleisbett (Schotter),,,,,SVb
+SVx,"Gleisanlage, außer Betrieb, mit Ruderalfluren",,,,,SVb (u)
+SVy,Sonstige Verkehrsflächen,,,,,SVs
+SK,Küstenschutz- und Hafenanlagen,,,,,
+SKl,Lahnung,,,,,Svx
+SKb,"Buhne, Mole",,,,,SVx
+SKm,Deckwerk aus Mastixschotter,,,,,SVx
+SKx,Steinschüttung (max. teilverklammert) oder Setzsteindeckwerk,,,,,SVx
+SKv,Deckwerk aus Asphalt oder vollverklammerten Schüttsteinen,,,,,SVx
+SKa,Anleger (schwimmend oder auf Pfeilern),,,,,SVk
+SKy,Sonstige Küstenschutz- oder Hafenanlage,,,,,SVk
+SF,Bauwerke an Binnengewässern,,,,,
+SFx,Steinschüttung,,,,,FX
+SFm,Massive Uferbefestigung,,,,,FX
+SFw,"Wehr, Sperrwerk, Sohlabsturze",,,,,FX
+SFf,Aufstiegshilfe für Fische,,,,,FX
+SFs,"Befestigte Badestelle, Steg",,,,,FX
+SFb,Buhne oder Mole an Flüssen,,,,,FX
+SFy,Sonstige Bauwerke an Binnengewässern,,,,,FX
+SX,Gebäude und vegetationsfreie Flächen im besiedelten Bereich,,,,,
+SXa,Alte Bausubstanz oder traditionelle Bauweise,,,,,SB
+SXx,Neue Bausubstanz,,,,,SB
+SXb,Bunker,,,,,SB
+SXr,Ruine,,,,,SB
+SXs,Sandplatz,,,,,SE
+SXt,"Aschebahn, Ascheplatz",,,,,SEb
+SXk,Kinderspielplatz,,,,,SE
+SXm,Mauern und Gabionen im besiedelten Raum,,,,,
+SXw,Friesenwall,,,,,
+SXn,"Baustelle, vegetationsarme/-freie Fläche",,,,,SE
+SXy,Sonstige vegetationsarme/-freie Fläche,,,,,SE
+SG,Grünflächen im besiedelten Bereich,,,,,
+SGz,"Garten, strukturarm",,,,,SGa
+SGo,(Haus-)Gärten mit einfacher Struktur und geringem Laubholzanteil,,,,,SGa
+SGb,"Garten, strukturreich",,,,,SGa
+SGp,Großflächige Gartenanlage mit Großgehölzen und parkartigem Charakter,,,,,SPp
+SGr,"Rasenfläche, arten- und strukturarm",,,,,SP
+SGe,"Rasenfläche, arten- oder strukturreich",,,,,SP
+SGs,Urbanes Ziergehölz und -staudenbeet,,,,,SGa
+SGg,Urbanes Gebüsch mit heimischen Arten,,,,,SGa
+SGf,Urbanes Gebüsch mit gebietsfremden Arten,,,,,SGa
+SGx,Urbanes Gehölz mit gebietsfremden Laubbäumen,,,,,SGa
+SGn,Urbanes Gehölz mit Nadelgehölzen,,,,,SGa
+SGy,Urbanes Gehölz mit heimischen Baumarten,,,,,SGa
+SGa,Ansaat aus Blühmischung,,,,,SGa
+SD,Bebauungen im Außenbereich,,,,,
+SDe,Einzelhaus und Splittersiedlungen,,,,,SD
+SDs,Siedlungsfläche mit dörflichem Charakter,,,,,SD
+SDp,Landwirtschaftliche Produktionsanlage,,,,,SD
+SDf,Ferienhaussiedlung,,,,,SD
+SDy,Sonstige Bebauung im Außenbereich,,,,,SD
+SB,Wohnbebauungen im Innenbereich,,,,,
+SBe,"Einzel, Doppel- und Reihenhausbebauung",,,,,SBe
+SBz,Zeilen- und Blockrandbebauung,,,,,SB
+SBg,Großformen und Hochhäuser,,,,,SB
+SBf,Öffentliches Gebäude,,,,,SB
+SBy,Sonstige Wohnbebauung,,,,,SB
+SI,Nicht zu Wohnzwecken dienende Bebauungen,,,,,
+SIg,Gewerbegebiet,,,,,SIg
+SIi,Industriegebiet,,,,,SIi
+SIk,Kläranlage,,,,,SIk
+SId,Deponie,,,,,SId
+SIp,Freiflächen-Fotovoltaikanlage,,,,,SIi
+SIw,Windkraftanlage,,,,,SIi
+SIb,Biogasanlage,,,,,SIi
+SIa,Wasserwerk,,,,,SIi
+SIv,Kraftwerk,,,,,SIi
+SIe,Anlage der Elektrizitätsversorgung,,,,,SIi
+SIf,Funkanlage,,,,,SIi
+SIr,Rohrleitung/Pipeline,,,,,SIi
+SIy,"Sonstige, nicht zu Wohnzwecken dienende Bebauung",,,,,SIi
+SIm,Grünflächen im Bereich von nicht zu Wohnzwecken dienenden Bebauungen,,,,,SIi
+SZ,Zivile Verkehrsanlagen,,,,,
+SZs,Straßenverkehrsanlage,,,,,SVs
+SZb,Bahnhof,,,,,SVb
+SZg,Gleisanlage,,,,,SVb
+SZf,Flugplatz,,,,,SVf
+SZh,Hafenanlage,,,,,SVk
+SZk,Kanalanlage,,,,,SVk
+SZy,Sonstige Verkehrsanlage,,,,,SVx
+SM,Militärische Flächen einschließlich ziviler Flughäfen,,,,,
+SMt,Militärische Fläche mit überwiegend offener Vegetation,,,,,SM
+SMd,Militärische Depotfläche,,,,,SMd
+SMk,Kasernenanlage mit Block- und Hallenbebauung,,,,,SMk
+SMf,Militär- und Zivilflugplatz,,,,,SMk
+SMh,Militärische Hafenanlage,,,,,SMk
+SMr,Radaranlage,,,,,SMk
+SMy,Sonstige Militärische Anlage,,,,,SMk
+SE,Sport- und Erholungsanlagen,,,,,
+SEk,Kinderspielplatz,,,,,SE
+SEb,Sportplatz,,,,,SEb
+SEd,Hundeübungsplatz,,,,,SE
+SEm,Modellflugplatz,,,,,SE
+SEw,Schießstand,,,,,SE
+SEg,Golfplatz,,,,,SEg
+SEr,Reitanlage,,,,,SEb
+SEc,Campingplatz,,,,,SEc
+SEs,Badestelle,,,,,SEf
+SEf,Freibad mit befestigtem Becken,,,,,SEs
+SEh,Sporthalle,,,,,SE
+SEv,Vergnügungspark,,,,,SE
+SEy,Andere Sport- und Erholungsanlage,,,,,SE
+SP,Öffentliche Park- und Grünanlagen,,,,,
+SPi,"Öffentliche Grünanlage, intensiv gepflegt",,,,,SP
+SPe,"Öffentliche Grünanlage, extensiv gepflegt",,,,,SP
+SPp,Öffentliche Parkanlage mit altem Baumbestand,,,,,SPp
+SPh,Historische Parkanlage,,,,,SPp
+SPk,Kleingartenanlage,,,,,SGk
+SPu,"Friedhof, strukturarm, ohne Altbaumbestand",,,,,SGf
+SPf,"Friedhof, strukturreich, mit Altbaumbestand",,,,,SGf
+SPw,Waldfriedhof,,,,,SP
+SPb,Botanischer Garten,,,,,SP
+SPz,"Tiergarten, Zoologischer Garten",,,,,SP
+SPy,Sonstige öffentliche Park- und Grünanlage,,,,,SP
+SPd,Denkmal,,,,,SP
+SL,Lagerflächen,,,,,
+SLl,landwirtschaftliche Lagerfläche,,,,,SId
+SLg,Gartenmülldeponie,,,,,SId
+SLf,forstwirtschaftliche Lagerfläche,,,,,SId
+SLt,Treibsellagerfläche,,,,,SId
+SLy,Sonstige Lagerfläche,,,,,SId
+X,Morphologische Merkmale (Überlagerung),,,,,
+XB,Binnendünen,,,,,
+XBb,Binnendüne,,1,3.a,,XXd
+XA,Abgrabungen und Aufschüttungen,,,,,
+XAa,Archäologische Geländeform,,,,,SAs
+XAb,Bombentrichter,,,,,SAs
+XAw,Lärmschutzwall,,,,,SAs
+XAs,Aufschüttung,,,,,SAs
+XAg,Abgrabung,,,,,SAg
+XAy,Spülfeld,,,,,SAs
+XD,Deiche,,,,,
+XDl,Landesschutzdeich,,,,,SVd
+XDs,Sommer-/Mitteldeich,,,,,SVd
+XU,Unterirdische Bauwerke,,,,,
+XUb,Unterirdischer Bunker,,,,,SB
+XH,Hänge und Höhlen,,,,,
+XHs,Artenreicher Steilhang im Binnenland,,5,9,,XXh
+XHb,Bachschlucht,,5,9,,FBs
+XHy,Sonstiger Steilhang im Binnenland,,,,,XXh
+XHk,Kesselmoor,,,,,MH
+XHo,Nicht touristisch erschlossene Höhle,,,(12.b),8310,
+XHx,Sonstige Höhle,,,(12.b),,
+XHt,Toteisloch,,,,,
+XK,Abbruchkanten und Kliffs,,,,,
+XKf,Tertiärkliff,6,,5.b,1230,KK
+XKh,Felskliff,6,,5.a,1230,KK
+XKn,Altmoränen-/Geestkliff (Nordseeküste),6,,5.b,1230,KK
+XKo,Jungmoränenkliff (Ostseeküste),6,,5.b,1230,KK
+XKd,Natürliche Abbruchkante,,,,,
+XKx,Künstlicher Geländesprung,,,,,
+XS,Sandbänke und Strandwälle,,,,,
+XSw,Strandwall,6,,5.d,,KSw
+XSd,Donn,,,,,
+XSn,Sandbank der Nordsee,6,,5.j,1110,KWu
+XSo,Sandbank der Ostsee,6,,5.j,1110,KWu
+Y,Strukturtyp - Hydrologische Merkmale,,,,,
+YQ,Quellen,,,,,
+YQk,Kalktuffquelle,2,,2.e,*7220,FQ
+YQs,Sicker- oder Sumpfquelle,2,,2.e,,FQ
+YQf,Fließ- oder Sprudelquelle,2,,2.e,,FQ
+YQt,Tümpel- oder Trichterquelle,2,,2.e,,FQ
+YQu,Unterseeische Quelle,2,,2.e,,FQ
+YQx,Technisch gefasste Quelle,,,,,FQx
+YA,Ästuarien,,,,,
+YAn,Ästuarien der Nordseezuflüsse,,,,1130,
+YAo,Ästuarien der Ostseezuflüsse,,,,1130,
+Z,Vegetationsgeprägte Merkmale (Überlagerung),,,,,
+ZO,Streuobstwiesen ,,,,,
+ZOm,Geschützte Streuobstwiese,7,,13,,HGo
+ZOy,Sonstige Streuobstwiese,,,,,HGo
