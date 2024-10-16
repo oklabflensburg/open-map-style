@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Parameters>
+    <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
+    <Parameter name="center">0,0,2</Parameter>
+    <Parameter name="format"><![CDATA[png8]]></Parameter>
+    <Parameter name="minzoom">0</Parameter>
+    <Parameter name="maxzoom">22</Parameter>
+    <Parameter name="scale">1</Parameter>
+    <Parameter name="metatile">2</Parameter>
+    <Parameter name="id"><![CDATA[bksh_kulisse]]></Parameter>
+    <Parameter name="_updated">1729088181000</Parameter>
+    <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
+    <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
+  </Parameters>
+  <Style filter-mode="first" name="kartierkulisse">
+    <Rule>
+      <LineSymbolizer stroke="#333333" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#5f7575" fill-opacity="0.3" />
+    </Rule>
+  </Style>
+  <Layer name="kartierkulisse" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[kartierkulisse]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from sh_biotop_kulisse) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[7.607544757769678,53.35981773665488,11.312965177038222,55.09916613191704]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[127.0.0.1]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="id"><![CDATA[kartierkulisse]]></Parameter>
+      <Parameter name="project"><![CDATA[bksh_kulisse]]></Parameter>
+      <Parameter name="srs"><![CDATA[+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+    </Datasource>
+  </Layer>
+</Map>
