@@ -1,0 +1,111 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.731650720874306,
+        53.39598639801768,
+        10.325271430534734,
+        53.739414370773694
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT geom, hauptbiotoptyp AS biotope_type FROM flaechenhafte_biotope_weitere) as _subquery",
+        "key_field": "",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9.731650720874306,53.39598639801768,10.325271430534734,53.739414370773694",
+        "dbname": "oklab",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "user": "oklab"
+      },
+      "id": "biotope_weitere",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "biotope_weitere",
+      "layerId": "biotope_weitere"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.734583029391857,
+        53.399331439302706,
+        10.319380906950125,
+        53.73682140041442
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT geom, hauptbiotoptyp AS biotope_type FROM flaechenhafte_biotope_teilweise_geschuetzt) as _subquery",
+        "key_field": "",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9.734583029391857,53.399331439302706,10.319380906950125,53.73682140041442",
+        "dbname": "oklab",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "user": "oklab"
+      },
+      "id": "biotope_teilweise",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "biotope_teilweise",
+      "layerId": "biotope_teilweise"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.73011929167556,
+        53.395109608592826,
+        10.323048994956316,
+        53.73926408644211
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT geom, hauptbiotoptyp AS biotope_type FROM flaechenhafte_biotope_vollstaendig_geschuetzt) as _subquery",
+        "key_field": "",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9.73011929167556,53.395109608592826,10.323048994956316,53.73926408644211",
+        "dbname": "oklab",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "user": "oklab"
+      },
+      "id": "biotope_vollstaendig",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "biotope_vollstaendig",
+      "layerId": "biotope_vollstaendig"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": ""
+}
