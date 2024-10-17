@@ -499,7 +499,7 @@ Map {
       polygon-fill: #d7f5d2;
     }
 
-    // Mesophiles Flachlandmähwiese 
+    // Mesophiles Flachlandmähwiese
     [biotope_type = 'GM'] {
       polygon-fill: #d7f5d2;
     }
@@ -746,6 +746,11 @@ Map {
 
     // Baumreihen
     [biotope_type = 'HR'] {
+      polygon-fill: #b47814;
+    }
+
+    // Gehölzsaum an Gewässern, (veralteter Typ)
+    [biotope_type = 'HRe'] {
       polygon-fill: #b47814;
     }
 
@@ -1634,6 +1639,11 @@ Map {
       polygon-fill: #c8c2fe;
     }
 
+    // XXX, (nicht bekannter Typ)
+    [biotope_type = 'NMm'] {
+      polygon-fill: #c8c2fe;
+    }
+
     // (Land-)Röhrichte
     [biotope_type = 'NR'] {
       polygon-fill: #c8c2fe;
@@ -1740,6 +1750,7 @@ Map {
     }
 
     // Ruderale Grasflur
+    [biotope_type = 'RHG'],
     [biotope_type = 'RHg'] {
       polygon-fill: #ffdca0;
     }
@@ -1855,6 +1866,8 @@ Map {
     }
 
     // Einzel, Doppel- und Reihenhausbebauung
+    [biotope_type = 'Sbe'],
+    [biotope_type = 'SBE'],
     [biotope_type = 'SBe'] {
       polygon-fill: #cccccc;
     }
@@ -1870,6 +1883,7 @@ Map {
     }
 
     // Sonstige Wohnbebauung
+    [biotope_type = 'Sby'],
     [biotope_type = 'SBy'] {
       polygon-fill: #cccccc;
     }
@@ -2219,8 +2233,18 @@ Map {
       polygon-fill: #cccccc;
     }
 
+    // Lagerfläche, (nicht bekannter Typ)
+    [biotope_type = 'SLi'] {
+      polygon-fill: #cccccc;
+    }
+
     // landwirtschaftliche Lagerfläche
     [biotope_type = 'SLl'] {
+      polygon-fill: #cccccc;
+    }
+
+    // XXX, (nicht bekannter Typ)
+    [biotope_type = 'SLr'] {
       polygon-fill: #cccccc;
     }
 
@@ -2380,11 +2404,13 @@ Map {
     }
 
     // Vollversiegelte Verkehrsfläche
+    [biotope_type = 'SVS'],
     [biotope_type = 'SVs'] {
       polygon-fill: #cccccc;
     }
 
     // Teilversiegelte Verkehrsfäche
+    [biotope_type = 'SVT'],
     [biotope_type = 'SVt'] {
       polygon-fill: #cccccc;
     }
@@ -2950,6 +2976,7 @@ Map {
     }
 
     // Pionierwald mit Zitter-Pappel/Hänge-Birke
+    [biotope_type = 'wpb'],
     [biotope_type = 'WPb'] {
       polygon-fill: #b4d79e;
     }
@@ -3010,6 +3037,7 @@ Map {
     }
 
     // Entwässerter Feuchtwald mit Birken
+    [biotope_type = 'WTB'],
     [biotope_type = 'WTb'] {
       polygon-fill: #b4d79e;
     }
@@ -3284,7 +3312,22 @@ Map {
       polygon-fill: #bad1c2;
     }
 
-    // Streuobstwiesen 
+    // Streuobstwiese auf Wertgrünland, (veralteter Typ)
+    [biotope_type = 'HOm'] {
+      polygon-fill: #bad1c2;
+    }
+
+    // Streuobstwiese mit hohem Anteil an Nitrophyten, (veralteter Typ)
+    [biotope_type = 'HOn'] {
+      polygon-fill: #bad1c2;
+    }
+
+    // Sonstige Streuobstwiese, (veralteter Typ)
+    [biotope_type = 'HOy'] {
+      polygon-fill: #bad1c2;
+    }
+
+    // Streuobstwiesen
     [biotope_type = 'ZO'] {
       polygon-fill: #bad1c2;
     }
@@ -3299,7 +3342,7 @@ Map {
       polygon-fill: #bad1c2;
     }
   }
-  
+
   ::outline[zoom >= 16] {
     line-color: #fff;
     line-width: 1;
@@ -3308,12 +3351,12 @@ Map {
     [zoom >= 17] {
       line-width: 2;
     }
-    
+
     [zoom >= 19] {
       line-width: 2.2;
     }
   }
-  
+
   ::label[zoom >= 15] {
     text-name: [biotope_type];
     text-face-name: 'Open Sans Bold';
@@ -3328,11 +3371,11 @@ Map {
     [zoom >= 16] {
       text-size: 14;
     }
-    
+
     [zoom >= 17] {
       text-size: 15;
     }
-    
+
     [zoom >= 18] {
       text-size: 16;
     }
