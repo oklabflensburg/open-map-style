@@ -4,6 +4,11 @@ Map {
 
 #biotope {
   ::shape {
+    // XXX, (nicht angegebener Typ)
+    [biotope_type = null] {
+      polygon-fill: #fdf7f7;
+    }
+
     // Acker- und Gartenbauflächen, Baumschulen und Weihnachtsbaumplantagen
     [biotope_type = 'A'] {
       polygon-fill: #e1d2be;
@@ -3357,7 +3362,7 @@ Map {
     }
   }
 
-  ::label[zoom >= 15] {
+  ::label[zoom >= 15][biotope_type != null][biotope_type != ''] {
     text-name: [biotope_type];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
@@ -3367,17 +3372,47 @@ Map {
     text-halo-fill: fadeout(#fff, 30%);
     text-halo-radius: 1;
     text-size: 13;
+  }
 
-    [zoom >= 16] {
-      text-size: 14;
-    }
+  ::label[zoom >= 15][biotope_type = null] {
+    text-name: '"NULL"';
+    text-face-name: 'Open Sans Bold';
+    text-placement: interior;
+    text-placement-type: simple;
+    text-margin: 30;
+    text-fill: #333;
+    text-halo-fill: fadeout(#fff, 30%);
+    text-halo-radius: 1;
+    text-size: 13;
+  }
 
-    [zoom >= 17] {
-      text-size: 15;
-    }
+  ::label[zoom >= 16][biotope_type != null][biotope_type != ''] {
+    text-name: [biotope_type];
+    text-size: 14;
+  }
 
-    [zoom >= 18] {
-      text-size: 16;
-    }
+  ::label[zoom >= 16][biotope_type = null] {
+    text-name: '"NULL"';
+    text-size: 14;
+  }
+
+  ::label[zoom >= 17][biotope_type != null][biotope_type != ''] {
+    text-name: [biotope_type];
+    text-size: 15;
+  }
+
+  ::label[zoom >= 17][biotope_type = null] {
+    text-name: '"NULL"';
+    text-size: 15;
+  }
+
+  ::label[zoom >= 18][biotope_type != null][biotope_type != ''] {
+    text-name: [biotope_type];
+    text-size: 16;
+  }
+
+  ::label[zoom >= 18][biotope_type = null] {
+    text-name: '"NULL"';
+    text-size: 16;
   }
 }
