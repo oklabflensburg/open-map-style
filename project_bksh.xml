@@ -2,28 +2,32 @@
 <!DOCTYPE Map[]>
 <Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
   <Parameters>
-    <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+    <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
     <Parameter name="center">0,0,2</Parameter>
     <Parameter name="format"><![CDATA[png8]]></Parameter>
     <Parameter name="minzoom">0</Parameter>
     <Parameter name="maxzoom">22</Parameter>
     <Parameter name="scale">1</Parameter>
     <Parameter name="metatile">2</Parameter>
-    <Parameter name="id"><![CDATA[bksh]]></Parameter>
-    <Parameter name="_updated">1728638355000</Parameter>
-    <Parameter name="name"><![CDATA[bksh]]></Parameter>
+    <Parameter name="id"><![CDATA[biotopkarte]]></Parameter>
+    <Parameter name="_updated">1729153849000</Parameter>
     <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
     <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
   </Parameters>
   <Style filter-mode="first" name="biotope-label">
     <Rule>
       <MaxScaleDenominator>2500</MaxScaleDenominator>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" margin="30" placement="interior" placement-type="simple" size="18"><![CDATA[[biotope_type]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" margin="30" placement="interior" placement-type="simple" size="16"><![CDATA[[biotope_type]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <MinScaleDenominator>2500</MinScaleDenominator>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" margin="30" placement="interior" placement-type="simple" size="15"><![CDATA[[biotope_type]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
-      <MinScaleDenominator>2500</MinScaleDenominator>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" margin="30" placement="interior" placement-type="simple" size="15"><![CDATA[[biotope_type]]]></TextSymbolizer>
+      <MinScaleDenominator>5000</MinScaleDenominator>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" margin="30" placement="interior" placement-type="simple" size="14"><![CDATA[[biotope_type]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -58,6 +62,18 @@
     </Rule>
     <Rule>
       <Filter><![CDATA[([biotope_type] = 'ZO')]]></Filter>
+      <PolygonSymbolizer fill="#bad1c2" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'HOy')]]></Filter>
+      <PolygonSymbolizer fill="#bad1c2" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'HOn')]]></Filter>
+      <PolygonSymbolizer fill="#bad1c2" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'HOm')]]></Filter>
       <PolygonSymbolizer fill="#bad1c2" />
     </Rule>
     <Rule>
@@ -281,6 +297,10 @@
       <PolygonSymbolizer fill="#b4d79e" />
     </Rule>
     <Rule>
+      <Filter><![CDATA[([biotope_type] = 'WTB')]]></Filter>
+      <PolygonSymbolizer fill="#b4d79e" />
+    </Rule>
+    <Rule>
       <Filter><![CDATA[([biotope_type] = 'WT')]]></Filter>
       <PolygonSymbolizer fill="#b4d79e" />
     </Rule>
@@ -322,6 +342,10 @@
     </Rule>
     <Rule>
       <Filter><![CDATA[([biotope_type] = 'WPe')]]></Filter>
+      <PolygonSymbolizer fill="#b4d79e" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'wpb')]]></Filter>
       <PolygonSymbolizer fill="#b4d79e" />
     </Rule>
     <Rule>
@@ -781,7 +805,15 @@
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
     <Rule>
+      <Filter><![CDATA[([biotope_type] = 'SVT')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
       <Filter><![CDATA[([biotope_type] = 'SVs')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'SVS')]]></Filter>
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
     <Rule>
@@ -909,7 +941,15 @@
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
     <Rule>
+      <Filter><![CDATA[([biotope_type] = 'SLr')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
       <Filter><![CDATA[([biotope_type] = 'SLl')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'SLi')]]></Filter>
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
     <Rule>
@@ -1193,6 +1233,10 @@
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
     <Rule>
+      <Filter><![CDATA[([biotope_type] = 'Sby')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
       <Filter><![CDATA[([biotope_type] = 'SBg')]]></Filter>
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
@@ -1202,6 +1246,14 @@
     </Rule>
     <Rule>
       <Filter><![CDATA[([biotope_type] = 'SBe')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'SBE')]]></Filter>
+      <PolygonSymbolizer fill="#cccccc" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'Sbe')]]></Filter>
       <PolygonSymbolizer fill="#cccccc" />
     </Rule>
     <Rule>
@@ -1297,6 +1349,10 @@
       <PolygonSymbolizer fill="#ffdca0" />
     </Rule>
     <Rule>
+      <Filter><![CDATA[([biotope_type] = 'RHG')]]></Filter>
+      <PolygonSymbolizer fill="#ffdca0" />
+    </Rule>
+    <Rule>
       <Filter><![CDATA[([biotope_type] = 'RHf')]]></Filter>
       <PolygonSymbolizer fill="#ffdca0" />
     </Rule>
@@ -1378,6 +1434,10 @@
     </Rule>
     <Rule>
       <Filter><![CDATA[([biotope_type] = 'NR')]]></Filter>
+      <PolygonSymbolizer fill="#c8c2fe" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'NMm')]]></Filter>
       <PolygonSymbolizer fill="#c8c2fe" />
     </Rule>
     <Rule>
@@ -2086,6 +2146,10 @@
     </Rule>
     <Rule>
       <Filter><![CDATA[([biotope_type] = 'HRn')]]></Filter>
+      <PolygonSymbolizer fill="#b47814" />
+    </Rule>
+    <Rule>
+      <Filter><![CDATA[([biotope_type] = 'HRe')]]></Filter>
       <PolygonSymbolizer fill="#b47814" />
     </Rule>
     <Rule>
