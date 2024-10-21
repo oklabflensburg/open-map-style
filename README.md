@@ -167,6 +167,15 @@ npm start
 ```
 
 
+## Install fonts
+
+Get Noto Emoji Regular font, despite it being deprecated by Google and for some reason this one is missing in the default packages
+
+```
+wget https://github.com/googlefonts/noto-emoji/blob/9a5261d871451f9b5183c93483cbd68ed916b1e9/fonts/NotoEmoji-Regular.ttf?raw=true --content-disposition -P /usr/share/fonts/
+wget https://github.com/stamen/terrain-classic/blob/master/fonts/unifont-Medium.ttf?raw=true --content-disposition -P /usr/share/fonts/
+```
+
 
 ## Running TileMill
 
