@@ -10,7 +10,7 @@
     <Parameter name="scale">1</Parameter>
     <Parameter name="metatile">2</Parameter>
     <Parameter name="id"><![CDATA[biotopkarte]]></Parameter>
-    <Parameter name="_updated">1729158351000</Parameter>
+    <Parameter name="_updated">1730229397000</Parameter>
     <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
     <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
   </Parameters>
@@ -2786,9 +2786,9 @@
     <StyleName><![CDATA[biotope-label]]></StyleName>
     <Datasource>
       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-      <Parameter name="table"><![CDATA[(SELECT geom, hauptcode AS biotope_type FROM sh_biotop) as _subquery]]></Parameter>
+      <Parameter name="table"><![CDATA[(SELECT shape, hauptcode AS biotope_type FROM sh4_bksh_belangflaechen) as _subquery]]></Parameter>
       <Parameter name="key_field"><![CDATA[]]></Parameter>
-      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[shape]]></Parameter>
       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
       <Parameter name="extent"><![CDATA[7.607544757769678,53.35981773665488,11.312965177038222,55.09916613191703]]></Parameter>
       <Parameter name="dbname"><![CDATA[oklab]]></Parameter>

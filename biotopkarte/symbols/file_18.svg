@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 -4.55 9.113 4.55"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>Qt SVG Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="param(fill)" fill-opacity="param(fill-opacity)" stroke="param(outline)" stroke-opacity="param(outline-opacity) 1" stroke-width="param(outline-width) 0" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="nonzero" d="M8.333,0 C8.333,-0.52 8.23316,-1.00967 8.03349,-1.469 C7.83382,-1.92833 7.56468,-2.327 7.22607,-2.665 C6.88746,-3.003 6.48812,-3.27167 6.02804,-3.471 C5.56796,-3.67033 5.07745,-3.77 4.5565,-3.77 C4.03555,-3.77 3.54504,-3.67033 3.08496,-3.471 C2.62488,-3.27167 2.22554,-3.003 1.88693,-2.665 C1.54832,-2.327 1.27918,-1.92833 1.07951,-1.469 C0.879836,-1.00967 0.78,-0.52 0.78,0 L0,0 C0,-0.624 0.119336,-1.21333 0.358008,-1.768 C0.59668,-2.32267 0.922154,-2.80583 1.33443,-3.2175 C1.74671,-3.62917 2.23055,-3.95417 2.78596,-4.1925 C3.34137,-4.43083 3.93155,-4.55 4.5565,-4.55 C5.18145,-4.55 5.77163,-4.43083 6.32704,-4.1925 C6.88245,-3.95417 7.36629,-3.62917 7.77857,-3.2175 C8.19085,-2.80583 8.51632,-2.32267 8.75499,-1.768 C8.99366,-1.21333 9.113,-0.624 9.113,0 L8.333,0"/>
+</g>
+</g>
+</svg>

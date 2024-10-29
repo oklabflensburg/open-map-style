@@ -29,9 +29,9 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT geom, hauptcode AS biotope_type FROM sh_biotop) as _subquery",
+        "table": "(SELECT shape, hauptcode AS biotope_type FROM sh4_bksh_belangflaechen) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "shape",
         "extent_cache": "auto",
         "extent": "7.607544757769678,53.35981773665488,11.312965177038222,55.09916613191703",
         "dbname": "oklab",
