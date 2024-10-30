@@ -10,7 +10,7 @@
     <Parameter name="scale">1</Parameter>
     <Parameter name="metatile">2</Parameter>
     <Parameter name="id"><![CDATA[shalkislot]]></Parameter>
-    <Parameter name="_updated">1730207738000</Parameter>
+    <Parameter name="_updated">1730317028000</Parameter>
     <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
     <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
   </Parameters>
@@ -18,69 +18,75 @@
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter><![CDATA[([area_hectares] > 10)]]></Filter>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
       <MinScaleDenominator>5000</MinScaleDenominator>
       <Filter><![CDATA[([area_hectares] > 10)]]></Filter>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="14"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="14"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
       <Filter><![CDATA[([area_hectares] > 10)]]></Filter>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="13"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="13"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter><![CDATA[([area_hectares] > 2)]]></Filter>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
       <MinScaleDenominator>5000</MinScaleDenominator>
       <Filter><![CDATA[([area_hectares] > 2)]]></Filter>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="14"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="14"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter><![CDATA[([area_hectares] > 1)]]></Filter>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>2500</MaxScaleDenominator>
-      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="16"><![CDATA[[zaehler]]]></TextSymbolizer>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="16"><![CDATA[[zaehler]/[nenner]]]></TextSymbolizer>
     </Rule>
   </Style>
   <Style filter-mode="first" name="lot-shape">
     <Rule>
       <MaxScaleDenominator>1500</MaxScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="2.2" />
+      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <MinScaleDenominator>1500</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="2" />
+      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
       <MinScaleDenominator>5000</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="1" />
+      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="0.4" />
+      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>25000</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="0.2" />
+      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MinScaleDenominator>50000</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="0.1" />
+      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
   </Style>
   <Layer name="lot" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
@@ -88,7 +94,7 @@
     <StyleName><![CDATA[lot-label]]></StyleName>
     <Datasource>
       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-      <Parameter name="table"><![CDATA[(SELECT zaehler, ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares, wkb_geometry FROM sh_alkis_parcel) as _subquery]]></Parameter>
+      <Parameter name="table"><![CDATA[(SELECT zaehler, nenner, ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares, wkb_geometry FROM sh_alkis_parcel) as _subquery]]></Parameter>
       <Parameter name="key_field"><![CDATA[]]></Parameter>
       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
       <Parameter name="extent_cache"><![CDATA[dynamic]]></Parameter>

@@ -2,11 +2,12 @@ Map {
   background-color: transparent;
 }
 
-
 #lot {
   ::shape {
     line-color: #333; 
     line-width: 0.1;
+    polygon-fill: #fdf7f7;
+    polygon-opacity: 0.1;
 
     [zoom >= 14] {
       line-width: 0.2;
@@ -30,7 +31,7 @@ Map {
   }
 
   ::label[area_hectares > 10][zoom >= 15] {
-    text-name: [zaehler];
+    text-name: [zaehler]/[nenner];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -41,7 +42,7 @@ Map {
   }
 
   ::label[area_hectares > 2][zoom >= 16] {
-    text-name: [zaehler];
+    text-name: [zaehler]/[nenner];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -52,7 +53,7 @@ Map {
   }
 
   ::label[area_hectares > 1][zoom >= 17] {
-    text-name: [zaehler];
+    text-name: [zaehler]/[nenner];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -63,7 +64,7 @@ Map {
   }
 
   ::label[zoom >= 18] {
-    text-name: [zaehler];
+    text-name: [zaehler]/[nenner];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -73,5 +74,3 @@ Map {
     text-size: 16;
   }
 }
-
-
