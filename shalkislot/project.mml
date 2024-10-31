@@ -29,7 +29,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT zaehler, nenner, ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares, wkb_geometry FROM sh_alkis_parcel) as _subquery",
+        "table": "(SELECT CASE WHEN nenner IS NULL THEN zaehler::text ELSE zaehler::text || '/' || nenner::text END AS parcel_number, ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares, wkb_geometry FROM sh_alkis_parcel) as _subquery",
         "key_field": "",
         "geometry_field": "wkb_geometry",
         "extent_cache": "dynamic",

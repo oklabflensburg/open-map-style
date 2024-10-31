@@ -31,7 +31,7 @@ Map {
   }
 
   ::label[area_hectares > 10][zoom >= 15] {
-    text-name: [zaehler]/[nenner];
+    text-name: [parcel_number];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -42,7 +42,7 @@ Map {
   }
 
   ::label[area_hectares > 2][zoom >= 16] {
-    text-name: [zaehler]/[nenner];
+    text-name: [parcel_number];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -53,7 +53,7 @@ Map {
   }
 
   ::label[area_hectares > 1][zoom >= 17] {
-    text-name: [zaehler]/[nenner];
+    text-name: [parcel_number];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
@@ -64,7 +64,7 @@ Map {
   }
 
   ::label[zoom >= 18] {
-    text-name: [zaehler]/[nenner];
+    text-name: [parcel_number];
     text-face-name: 'Open Sans Bold';
     text-placement: interior;
     text-placement-type: simple;
