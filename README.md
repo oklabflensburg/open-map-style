@@ -1,6 +1,6 @@
-# German OpenStreetMap style
+# Mapnik OpenStreetMap styles
 
-German openstreetmap CartoCSS stylesheet for the Mapnik pre-processor developed by @oklabflensburg
+This repo contain mapnik and CartoCSS OpenStreetMap stylesfor the Mapnik renderer.
 
 
 
@@ -8,21 +8,13 @@ German openstreetmap CartoCSS stylesheet for the Mapnik pre-processor developed 
 
 Install system dependencies and packages
 
-```
+```sh
+
+sudo apt update
 sudo apt install wget curl
 sudo apt install git git-lfs
 sudo apt install python3 python3-pip python3-venv
-sudo apt install gnupg2 gdal-bin osm2pgsql
-
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor > postgresql-keyring.gpg
-sudo mv postgresql-keyring.gpg /etc/apt/trusted.gpg.d/
-sudo chown root:root /etc/apt/trusted.gpg.d/postgresql-keyring.gpg
-sudo chmod ugo+r /etc/apt/trusted.gpg.d/postgresql-keyring.gpg
-sudo chmod go-w /etc/apt/trusted.gpg.d/postgresql-keyring.gpg
-echo "deb [arch=amd64, signed-by=/etc/apt/trusted.gpg.d/postgresql-keyring.gpg] http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
-
-sudo apt update
-sudo apt install postgresql-16 postgresql-16-postgis-3 postgresql-client-16
+sudo apt install postgresql-16 postgresql-postgis gdal-bin osm2pgsql
 
 curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
 sudo -E bash nodesource_setup.sh
@@ -31,11 +23,11 @@ sudo npm install -g carto
 ```
 
 
-## Create User
+## Create system user
 
 Make sure to add your user to the `oklab`-group.
 
-```
+```sh
 sudo adduser oklab
 sudo usermod -a -G www-data oklab
 sudo mkdir -p /opt/oklab
@@ -44,34 +36,34 @@ sudo chmod 770 -R /opt/oklab
 ```
 
 
-## Prepare Database
+## Prepare database
 
 Open and edit `/etc/postgresql/16/main/pg_hba.conf` add following two entries into your config.
 
-```
+```sh
 local   oklab           oklab                                   trust
 host    oklab           oklab           127.0.0.1/32            trust
 ```
 
 After these edits run `sudo systemctl restart postgresql.service`. To verify everything works run..
 
-```
+```sh
 sudo systemctl status postgresql.service
 ```
 
 
 Now change user `sudo -i -u postgres` and run these commands.
 
-```
+```sh
 createuser -d oklab
 createdb -O oklab oklab
 psql -U oklab
 exit
 ```
 
-Note since the `oklab`-user does not have superuser permissions you must login with `psql`
+Note since the `oklab`-user does not have superuser permissions you must login with `psql -U postgres`
 
-```
+```sh
 \c oklab
 CREATE EXTENSION IF NOT EXISTS postgis;
 CREATE EXTENSION IF NOT EXISTS hstore;
@@ -81,84 +73,114 @@ exit
 ```
 
 
-## Import data
+## Download OSM extracts
 
-In our case we want to run TileMill locally against a local PostgreSQL database installation.
-It is recommanded to download an OpenStreetMap data extract of your choise from [Geofabrik](https://download.geofabrik.de)
+To use TileMill locally we need OpenStreetMap extracts. You can use [Geofabrik](https://download.geofabrik.de) to choose a suitable extract. Take care that you are logged in as `oklab` user, if not switch your user like `sudo -i -u oklab`.
 
-```
-sudo -i -u oklab
+```sh
 mkdir -p /opt/oklab/map
 cd /opt/oklab/map
 wget https://download.geofabrik.de/europe/germany/<geofabrik-download-filename>
 ```
 
 
-To import the OpenStreetMap data extract follow this steps, replace `<geofabrik-download-filename>` with the filename you downloaded before.
+## Clone OSM carto
 
+Before we are ready to start we want to clone the main OpenStreetMap carto project. Take care that you are logged in as `oklab` user, if not switch your user like `sudo -i -u oklab`.
+
+```sh
+mkdir -p /opt/oklab/git
+cd /opt/oklab/git
+git clone https://github.com/gravitystorm/openstreetmap-carto.git
 ```
-sudo -i -u oklab
+
+
+## Import OSM extracts
+
+Once you cloned the repository you are ready to import the OpenStreetMap extract. Make sure to replace `<geofabrik-download-filename>` with the filename you downloaded before. Take care that you are logged in as `oklab` user, if not switch your user like `sudo -i -u oklab`.
+
+```sh
+mkdir -p /opt/oklab/git
 cd /opt/git/openstreetmap-carto
-osm2pgsql -G --hstore --style ./openstreetmap-carto.style --tag-transform-script openstreetmap-carto.lua -d oklab /opt/oklab/map/schleswig-holstein-latest.osm.pbf
-```
-
-Now you should be ready to create some indexes
-
-```
-sudo -i -u oklab
-psql oklab
-```
-
-You should be loggedin as `oklab` user on your machine as well as on PostgreSQL
-
-```
-CREATE INDEX planet_osm_line_ferry ON planet_osm_line USING GIST (way) WHERE route = 'ferry' AND osm_id > 0;
-CREATE INDEX planet_osm_line_label ON planet_osm_line USING GIST (way) WHERE name IS NOT NULL OR ref IS NOT NULL;
-CREATE INDEX planet_osm_line_river ON planet_osm_line USING GIST (way) WHERE waterway = 'river';
-CREATE INDEX planet_osm_line_waterway ON planet_osm_line USING GIST (way) WHERE waterway IN ('river', 'canal', 'stream', 'drain', 'ditch');
-CREATE INDEX planet_osm_point_place ON planet_osm_point USING GIST (way) WHERE place IS NOT NULL AND name IS NOT NULL;
-CREATE INDEX planet_osm_polygon_admin ON planet_osm_polygon USING GIST (ST_PointOnSurface(way)) WHERE name IS NOT NULL AND boundary = 'administrative' AND admin_level IN ('0', '1', '2', '3', '4');
-CREATE INDEX planet_osm_polygon_military ON planet_osm_polygon USING GIST (way) WHERE (landuse = 'military' OR military = 'danger_area') AND building IS NULL;
-CREATE INDEX planet_osm_polygon_name ON planet_osm_polygon USING GIST (ST_PointOnSurface(way)) WHERE name IS NOT NULL;
-CREATE INDEX planet_osm_polygon_name_z6 ON planet_osm_polygon USING GIST (ST_PointOnSurface(way)) WHERE name IS NOT NULL AND way_area > 5980000;
-CREATE INDEX planet_osm_polygon_nobuilding ON planet_osm_polygon USING GIST (way) WHERE building IS NULL;
-CREATE INDEX planet_osm_polygon_water ON planet_osm_polygon USING GIST (way) WHERE waterway IN ('dock', 'riverbank', 'canal') OR landuse IN ('reservoir', 'basin') OR "natural" IN ('water', 'glacier');
-CREATE INDEX planet_osm_polygon_way_area_z10 ON planet_osm_polygon USING GIST (way) WHERE way_area > 23300;
-CREATE INDEX planet_osm_polygon_way_area_z6 ON planet_osm_polygon USING GIST (way) WHERE way_area > 5980000;
-CREATE INDEX planet_osm_roads_admin ON planet_osm_roads USING GIST (way) WHERE boundary = 'administrative';
-CREATE INDEX planet_osm_roads_admin_low ON planet_osm_roads USING GIST (way) WHERE boundary = 'administrative' AND admin_level IN ('0', '1', '2', '3', '4');
-CREATE INDEX planet_osm_roads_roads_ref ON planet_osm_roads USING GIST (way) WHERE highway IS NOT NULL AND ref IS NOT NULL;
+osm2pgsql -O flex -S openstreetmap-carto-flex.lua -d oklab /opt/oklab/map/<geofabrik-download-filename>
 ```
 
 
-## Development
+## Disable JIT
 
-To run TileMill locally you may want to follow these instruction.
-You need to have a specific node version installed on you machine.
+We do not recommend [PostgreSQL JIT](https://www.postgresql.org/docs/current/jit-reason.html), which is on by default in PostgreSQL 12 and higher. JIT is benifitial for slow queries where executing the SQL takes substantial time and that time is not spent in function calls. This is not the case for rendering, where most time is spent either fetching from disk, in PostGIS functions, or the query is fast. In theory, the query planner will only use JIT on slower queries, but it is known to get the type of queries map rendering requires wrong.
 
+Disabling JIT is **essential** for use with Kosmtik and other style development tools.
+
+JIT can be disabled with `psql -d oklab -c 'ALTER SYSTEM SET jit=off;' -c 'SELECT pg_reload_conf();'` or any other means of adjusting the PostgreSQL config.
+
+
+## Custom indexes
+
+Custom indexes are required for rendering performance and are essential on full planet databases. These are generated by the `scripts/indexes.py` script, see `scripts/indexes.py --help` for various advanced options, but the command below will work to create the indexes on a new installation:
+
+```sh
+psql -d oklab -f indexes.sql
 ```
-sudo -i -u oklab
+
+The indexes can be created in parallel with
+
+```sh
+scripts/indexes.py -0 | xargs -0 -P0 -I{} psql -d oklab -c "{}"
+```
+
+
+## Database functions
+
+Some functions need to be loaded into the database for current versions. These can be added / re-loaded at any point using:
+
+```sh
+psql -d oklab -f functions.sql
+```
+
+
+## Scripted download
+
+Some features are rendered using preprocessed shapefiles.
+
+To download them and import them into the database you can run the following script:
+
+```sh
+scripts/get-external-data.py
+```
+
+The script downloads shapefiles, loads them into the database, and sets up the tables for rendering. Additional script options and corresponding documentation is available by invoking `scripts/get-external-data.py --help`.
+
+
+## Download fonts
+
+The stylesheet uses Noto, an openly licensed font family from Google with support for multiple scripts. The stylesheet uses Noto's "Sans" style where available. If not available, this stylesheet uses another appropriate style from the Noto family. The "UI" version is used where available, as its vertical metrics fit better with Latin text.
+
+Hanazono is used a fallback for seldom used CJK characters that are not covered by Noto.
+
+For more details, see the documentation at [fonts.mss](style/fonts.mss).
+
+To download the fonts, run the following script
+
+```sh
+scripts/get-fonts.sh
+```
+
+
+## Setup TileMill
+
+To locally develop, test or create new carto styles with TileMill, you need to have a specific Node version installed on you machine. Take care that you are logged in as `oklab` user, if not switch your user like `sudo -i -u oklab`. The following step can be done in any directory.
+
+```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install lts/carbon
 nvm use v8.17.0
 ```
 
 
-To insert OpenStreetMap data we want to use some `*.lua` scripts from this repo.
+Now make sure to clone the [TileMill](https://tilemill-project.github.io/tilemill/) project from GitHub as `oklab` user and run setup.
 
-```
-sudo -i -u oklab
-cd /opt/oklab/git
-git clone https://github.com/gravitystorm/openstreetmap-carto.git
-cd openstreetmap-carto
-carto project.mml > project.xml
-python3 scripts/get-external-data.py --host=127.0.0.1 --database=oklab --username=oklab --port=5432
-```
-
-Clone the [TileMill](https://tilemill-project.github.io/tilemill/) project from GitHub as `oklab` user and run setup.
-
-```
-sudo -i -u oklab
+```sh
 cd /opt/oklab/git
 git clone https://github.com/tilemill-project/tilemill.git
 cd tilemill
@@ -171,7 +193,7 @@ npm start
 
 Get Noto Emoji Regular font, despite it being deprecated by Google and for some reason this one is missing in the default packages
 
-```
+```sh
 wget https://github.com/googlefonts/noto-emoji/blob/9a5261d871451f9b5183c93483cbd68ed916b1e9/fonts/NotoEmoji-Regular.ttf?raw=true --content-disposition -P /usr/share/fonts/
 wget https://github.com/stamen/terrain-classic/blob/master/fonts/unifont-Medium.ttf?raw=true --content-disposition -P /usr/share/fonts/
 ```
@@ -184,12 +206,12 @@ This section needs to be extended. But here are some basic PostGIS layer configu
 
 Connection string
 
-```
+```sh
 dbname=oklab host=127.0.0.1 port=5432 user=oklab
 ```
 
 Projection string, as reference you may have a look at https://epsg.io/3857
 
-```
+```sh
 +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
 ```
