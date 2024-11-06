@@ -13,7 +13,7 @@
   "format": "png8",
   "interactivity": false,
   "minzoom": 0,
-  "maxzoom": 22,
+  "maxzoom": 20,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss"
@@ -22,14 +22,14 @@
     {
       "geometry": "polygon",
       "extent": [
-        8.751139545409773,
-        54.64987766936796,
-        8.83058170226569,
-        54.68594396126836
+        7.8832598120807775,
+        53.36372841175403,
+        11.313271903242404,
+        55.03660912016724
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT CASE WHEN nenner IS NULL THEN zaehler::text ELSE zaehler::text || '/' || nenner::text END AS parcel_number, ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares, wkb_geometry FROM sh_alkis_parcel) as _subquery",
+        "table": "(SELECT parcel_number, ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares, wkb_geometry FROM sh_alkis_parcel) as _subquery",
         "key_field": "",
         "geometry_field": "wkb_geometry",
         "extent_cache": "dynamic",
