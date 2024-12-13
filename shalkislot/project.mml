@@ -1,16 +1,16 @@
 {
   "bounds": [
-    -180,
-    -85.05112877980659,
-    180,
-    85.05112877980659
+    7.868514562,
+    53.3590675115,
+    11.3132037822,
+    55.0573747014
   ],
   "center": [
-    0,
-    0,
-    2
+    9.8437,
+    54.2652,
+    3
   ],
-  "format": "png8",
+  "format": "png24",
   "interactivity": false,
   "minzoom": 0,
   "maxzoom": 20,
@@ -49,7 +49,9 @@
     }
   ],
   "scale": 1,
-  "metatile": 2,
-  "name": "",
-  "description": ""
+  "metatile": 1,
+  "name": "sh_parcel",
+  "description": "",
+  "attribution": " © GeoBasis-DE/LVermGeo SH/CC BY 4.0",
+  "version": "0.2.1"
 }

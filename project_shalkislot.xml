@@ -2,15 +2,18 @@
 <!DOCTYPE Map[]>
 <Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
   <Parameters>
-    <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
-    <Parameter name="center">0,0,2</Parameter>
-    <Parameter name="format"><![CDATA[png8]]></Parameter>
+    <Parameter name="bounds">7.868514562,53.3590675115,11.3132037822,55.0573747014</Parameter>
+    <Parameter name="center">9.8437,54.2652,3</Parameter>
+    <Parameter name="format"><![CDATA[png24]]></Parameter>
     <Parameter name="minzoom">0</Parameter>
     <Parameter name="maxzoom">20</Parameter>
     <Parameter name="scale">1</Parameter>
-    <Parameter name="metatile">2</Parameter>
+    <Parameter name="metatile">1</Parameter>
     <Parameter name="id"><![CDATA[shalkislot]]></Parameter>
-    <Parameter name="_updated">1730886336000</Parameter>
+    <Parameter name="_updated">1734111921000</Parameter>
+    <Parameter name="name"><![CDATA[sh_parcel]]></Parameter>
+    <Parameter name="attribution"><![CDATA[ © GeoBasis-DE/LVermGeo SH/CC BY 4.0]]></Parameter>
+    <Parameter name="version"><![CDATA[0.2.1]]></Parameter>
     <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
     <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
   </Parameters>
@@ -57,36 +60,30 @@
     <Rule>
       <MaxScaleDenominator>1500</MaxScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="2.2" />
-      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <MinScaleDenominator>1500</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="2" />
-      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
       <MinScaleDenominator>5000</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="1" />
-      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="0.4" />
-      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>25000</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="0.2" />
-      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
     <Rule>
       <MinScaleDenominator>50000</MinScaleDenominator>
       <LineSymbolizer stroke="#333333" stroke-width="0.1" />
-      <PolygonSymbolizer fill="#fdf7f7" fill-opacity="0.1" />
     </Rule>
   </Style>
   <Layer name="lot" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">

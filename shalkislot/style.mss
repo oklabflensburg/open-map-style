@@ -6,8 +6,6 @@ Map {
   ::shape {
     line-color: #333; 
     line-width: 0.1;
-    polygon-fill: #fdf7f7;
-    polygon-opacity: 0.1;
 
     [zoom >= 14] {
       line-width: 0.2;
