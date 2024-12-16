@@ -2,15 +2,19 @@
 <!DOCTYPE Map[]>
 <Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
   <Parameters>
-    <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
-    <Parameter name="center">0,0,2</Parameter>
-    <Parameter name="format"><![CDATA[png8]]></Parameter>
+    <Parameter name="bounds">7.868514562,53.3590675115,11.3132037822,55.0573747014</Parameter>
+    <Parameter name="center">9.6254,54.3846,9</Parameter>
+    <Parameter name="format"><![CDATA[png24]]></Parameter>
     <Parameter name="minzoom">0</Parameter>
-    <Parameter name="maxzoom">22</Parameter>
+    <Parameter name="maxzoom">20</Parameter>
     <Parameter name="scale">1</Parameter>
     <Parameter name="metatile">2</Parameter>
     <Parameter name="id"><![CDATA[biotopkarte]]></Parameter>
-    <Parameter name="_updated">1730229397000</Parameter>
+    <Parameter name="_updated">1734343559000</Parameter>
+    <Parameter name="name"><![CDATA[bksh]]></Parameter>
+    <Parameter name="description"><![CDATA[Der vorliegende Geodatensatz umfasst alle bis zum angegebenen Stand kartierten bzw. aktualisierten und digitalisierten flächenhaft erfassten Wertbiotope (nach § 30 BNatSchG i. V. m. § 21 LNatSchG gesetzlich geschützte Biotope und/oder Lebensraumtypen gem. Anh. I der FFH-Richtlinie) und Nichtwertbiotope (weder gesetzlich geschützt noch FFH-Lebensraumtyp) aus der landesweiten Biotopkartierung Schleswig-Holstein (BKSH) und weiteren Kartierprojekten.]]></Parameter>
+    <Parameter name="attribution"><![CDATA[© LfU SH/dl-de/by-2-0]]></Parameter>
+    <Parameter name="version"><![CDATA[0.2.2]]></Parameter>
     <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
     <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
   </Parameters>
@@ -2786,11 +2790,11 @@
     <StyleName><![CDATA[biotope-label]]></StyleName>
     <Datasource>
       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-      <Parameter name="table"><![CDATA[(SELECT shape, hauptcode AS biotope_type FROM sh4_bksh_belangflaechen) as _subquery]]></Parameter>
+      <Parameter name="table"><![CDATA[(SELECT wkb_geometry, hauptcode AS biotope_type FROM sh_biotope) as _subquery]]></Parameter>
       <Parameter name="key_field"><![CDATA[]]></Parameter>
-      <Parameter name="geometry_field"><![CDATA[shape]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-      <Parameter name="extent"><![CDATA[7.607544757769678,53.35981773665488,11.312965177038222,55.09916613191703]]></Parameter>
+      <Parameter name="extent"><![CDATA[7.869437328303278,53.35981773665488,11.312965177038222,55.05871451417457]]></Parameter>
       <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
       <Parameter name="host"><![CDATA[127.0.0.1]]></Parameter>
       <Parameter name="port"><![CDATA[5432]]></Parameter>
