@@ -1,0 +1,18 @@
+[
+    {
+        "where": "center",
+        "then": [54.23231, 9.2321, 10]
+    },
+    {
+        "where": "Layer",
+        "if": {
+            "Datasource.type": "postgis"
+        },
+        "then": {
+            "Datasource.dbname": "oklab",
+            "Datasource.password": "",
+            "Datasource.user": "5432",
+            "Datasource.host": "localhost"
+        }
+    }
+]
