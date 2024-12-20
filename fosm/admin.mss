@@ -17,7 +17,7 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
     [zoom >= 8] {
       background/line-join: bevel;
       background/line-color: white;
-      background/line-width: 3;
+      background/line-width: 0.3;
     }
     [zoom >= 9] { background/line-width: 3.5; }
     [zoom >= 10] { background/line-width: 4.5; }

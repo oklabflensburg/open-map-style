@@ -671,7 +671,8 @@
         "cache-features": true,
         "minzoom": 13
       },
-      "layerId": "cliffs"
+      "layerId": "cliffs",
+      "status": "off"
     },
     {
       "id": "ferry-routes",
@@ -1358,7 +1359,8 @@
         "cache-features": true,
         "minzoom": 8
       },
-      "layerId": "protected-areas"
+      "layerId": "protected-areas",
+      "status": "off"
     },
     {
       "id": "trees",
@@ -2179,7 +2181,8 @@
       "properties": {
         "minzoom": 13
       },
-      "layerId": "protected-areas-text"
+      "layerId": "protected-areas-text",
+      "status": "off"
     },
     {
       "id": "amenity-low-priority",

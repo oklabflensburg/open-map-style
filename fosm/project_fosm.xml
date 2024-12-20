@@ -10,7 +10,7 @@
     <Parameter name="scale">1</Parameter>
     <Parameter name="metatile">2</Parameter>
     <Parameter name="id"><![CDATA[osm-carto-sgm]]></Parameter>
-    <Parameter name="_updated">1734459712000</Parameter>
+    <Parameter name="_updated">1734532217000</Parameter>
     <Parameter name="name"><![CDATA[OpenStreetMap Carto]]></Parameter>
     <Parameter name="description"><![CDATA[A general-purpose OpenStreetMap mapnik style, in CartoCSS]]></Parameter>
     <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
@@ -15425,7 +15425,7 @@
       <LinePatternSymbolizer file="symbols/cliff.svg" />
     </Rule>
   </Style>
-  <Layer cache-features="true" maximum-scale-denominator="100000" name="cliffs" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Layer cache-features="true" maximum-scale-denominator="100000" name="cliffs" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" status="off">
     <StyleName><![CDATA[cliffs]]></StyleName>
     <StyleName><![CDATA[cliffs-man_made]]></StyleName>
     <Datasource>
@@ -39161,7 +39161,7 @@ AS entrances]]></Parameter>
       <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <MinScaleDenominator>1500000</MinScaleDenominator>
       <Filter><![CDATA[([admin_level] = '2')]]></Filter>
-      <LineSymbolizer stroke="#ffffff" stroke-linejoin="bevel" stroke-width="3" />
+      <LineSymbolizer stroke="#ffffff" stroke-linejoin="bevel" stroke-width="0.3" />
     </Rule>
   </Style>
   <Layer maximum-scale-denominator="3000000" minimum-scale-denominator="100000" name="admin-mid-zoom" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -39554,13 +39554,13 @@ AS entrances]]></Parameter>
     <Rule>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer stroke="#008000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+      <LineSymbolizer stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>750000</MaxScaleDenominator>
       <MinScaleDenominator>200000</MinScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer stroke="#008000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+      <LineSymbolizer stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
     </Rule>
   </Style>
   <Style filter-mode="first" name="protected-areas-wideline" opacity="0.15">
@@ -39584,19 +39584,19 @@ AS entrances]]></Parameter>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer offset="-2" stroke="#008000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
+      <LineSymbolizer offset="-2" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer offset="-1" stroke="#008000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+      <LineSymbolizer offset="-1" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>750000</MaxScaleDenominator>
       <MinScaleDenominator>200000</MinScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer offset="-0.9" stroke="#008000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.6" />
+      <LineSymbolizer offset="-0.9" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.6" />
     </Rule>
   </Style>
   <Style filter-mode="first" name="protected-areas" opacity="0.25">
@@ -39616,16 +39616,16 @@ AS entrances]]></Parameter>
       <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>750000</MinScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer stroke="#008000" stroke-width="1.5" />
+      <LineSymbolizer stroke="#ff0000" stroke-width="1.5" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <MinScaleDenominator>1500000</MinScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 750)]]></Filter>
-      <LineSymbolizer stroke="#008000" stroke-width="1.2" />
+      <LineSymbolizer stroke="#ff0000" stroke-width="1.2" />
     </Rule>
   </Style>
-  <Layer cache-features="true" maximum-scale-denominator="3000000" name="protected-areas" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Layer cache-features="true" maximum-scale-denominator="3000000" name="protected-areas" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" status="off">
     <StyleName><![CDATA[protected-areas]]></StyleName>
     <StyleName><![CDATA[protected-areas-wideline]]></StyleName>
     <StyleName><![CDATA[protected-areas-narrowline]]></StyleName>
@@ -46718,60 +46718,6 @@ ORDER BY
     <Rule>
       <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>3000000</MaxScaleDenominator>
-      <MinScaleDenominator>750000</MinScaleDenominator>
       <Filter><![CDATA[([feature] = 'natural_wood') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
       <TextSymbolizer fill="#3d434a" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
@@ -46844,6 +46790,42 @@ ORDER BY
     <Rule>
       <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
       <Filter><![CDATA[([feature] = 'natural_glacier') and ([is_building] = 'no') and ([way_pixels] > 10000)]]></Filter>
       <TextSymbolizer fill="#2e90d1" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
@@ -46852,6 +46834,24 @@ ORDER BY
       <MinScaleDenominator>750000</MinScaleDenominator>
       <Filter><![CDATA[([feature] = 'military_danger_area') and ([is_building] = 'no') and ([way_pixels] > 3000)]]></Filter>
       <TextSymbolizer fill="#bbc1c7" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
+      <MinScaleDenominator>750000</MinScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -48599,51 +48599,6 @@ ORDER BY
     </Rule>
     <Rule>
       <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>750000</MaxScaleDenominator>
       <Filter><![CDATA[([feature] = 'natural_wood') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
       <TextSymbolizer fill="#3d434a" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
@@ -48701,6 +48656,36 @@ ORDER BY
       <MaxScaleDenominator>750000</MaxScaleDenominator>
       <Filter><![CDATA[([feature] = 'landuse_military') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
       <TextSymbolizer fill="#848e98" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 48000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 12000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -49119,6 +49104,21 @@ ORDER BY
       <TextSymbolizer fill="#bbc1c7" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
     <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 3000) and ([is_building] = 'no')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter><![CDATA[([feature] = 'leisure_fitness_station') and ([way_pixels] > 3000) and ([int_access] = 'restricted')]]></Filter>
       <TextSymbolizer dy="13" fill="#6a757f" fontset-name="fontset-0" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
@@ -49529,51 +49529,6 @@ ORDER BY
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 48000)]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 12000)]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'leisure_nature_reserve')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 48000)]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 12000)]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_protected_area')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 48000)]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 12000)]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
-      <Filter><![CDATA[([feature] = 'boundary_national_park')]]></Filter>
-      <TextSymbolizer fill="#008000" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
-    </Rule>
-    <Rule>
-      <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter><![CDATA[([feature] = 'landuse_forest') and ([way_pixels] > 48000)]]></Filter>
       <TextSymbolizer fill="#3d434a" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
@@ -49631,6 +49586,36 @@ ORDER BY
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter><![CDATA[([feature] = 'landuse_military')]]></Filter>
       <TextSymbolizer fill="#848e98" fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 48000)]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 48000)]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 48000)]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-2.25" size="15" wrap-width="45"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve') and ([way_pixels] > 12000)]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area') and ([way_pixels] > 12000)]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park') and ([way_pixels] > 12000)]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.8" size="12" wrap-width="36"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -50178,6 +50163,21 @@ ORDER BY
       <MaxScaleDenominator>12500</MaxScaleDenominator>
       <Filter><![CDATA[([feature] = 'natural_spring')]]></Filter>
       <TextSymbolizer dy="7" fill="#4d80b3" fontset-name="fontset-0" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_protected_area')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'leisure_nature_reserve')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <Filter><![CDATA[([feature] = 'boundary_national_park')]]></Filter>
+      <TextSymbolizer fontset-name="fontset-1" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" line-spacing="-1.5" size="10" wrap-width="30"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -51329,10 +51329,10 @@ SELECT
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter><![CDATA[([way_pixels] > 192000)]]></Filter>
-      <TextSymbolizer clip="true" dy="-10" fill="#008000" fontset-name="fontset-0" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" largest-bbox-only="false" margin="10" placement="line" repeat-distance="250" spacing="750" vertical-alignment="middle"><![CDATA[[name]]]></TextSymbolizer>
+      <TextSymbolizer clip="true" dy="-10" fill="#ff0000" fontset-name="fontset-0" halo-fill="rgba(255, 255, 255, 0.6)" halo-radius="1" largest-bbox-only="false" margin="10" placement="line" repeat-distance="250" spacing="750" vertical-alignment="middle"><![CDATA[[name]]]></TextSymbolizer>
     </Rule>
   </Style>
-  <Layer maximum-scale-denominator="100000" name="protected-areas-text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Layer maximum-scale-denominator="100000" name="protected-areas-text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" status="off">
     <StyleName><![CDATA[protected-areas-text]]></StyleName>
     <Datasource>
       <Parameter name="type"><![CDATA[postgis]]></Parameter>
