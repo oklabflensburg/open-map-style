@@ -1,4 +1,4 @@
-@marina-text: #ffffff; // also swimming_pool
+@marina-text: #4d80b3; // also swimming_pool
 @wetland-text: darken(#4aa5fa, 25%); /* Also for mud */
 @shop-icon: #ac39ac;
 @shop-text: #939;
@@ -20,7 +20,7 @@
 @barrier-icon: #3f3f3f;
 @landform-color: #d08f55;
 @leisure-green: darken(@park, 60%);
-@protected-area: #f00;
+@protected-area: #95dbf6;
 @aboriginal: #82643a;
 @religious-icon: #000000;
 
@@ -117,6 +117,14 @@
     [feature = 'amenity_pub'][zoom >= 18] {
       marker-file: url('symbols/amenity/pub.svg');
     }
+  }
+
+  [feature = 'highway_street_lamp'][zoom>=19] {
+    marker-file: url('symbols/disque.svg');
+    marker-transform: "scale(1.5)";
+    marker-fill: grey;
+    marker-line-width: 2.5;
+    marker-line-color: #ffc;
   }
 
   [feature = 'amenity_internet_cafe'][zoom >= 17] {

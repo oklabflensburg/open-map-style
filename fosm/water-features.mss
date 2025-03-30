@@ -97,20 +97,20 @@
   [zoom >= 14] {
     a/line-width: 1;
     // a/line-offset: -0.5;
-    a/line-color: blue;
+    a/line-color: #4d80b3;
     a/line-opacity: 0.1;
     a/line-join: round;
     a/line-cap: round;
     b/line-width: 3;
     // b/line-offset: -1.5;
-    b/line-color: blue;
+    b/line-color: #4d80b3;
     b/line-opacity: 0.1;
     b/line-join: round;
     b/line-cap: round;
     [zoom >= 17] {
-      a/line-width: 2;
+      a/line-width: 1;
       // a/line-offset: -1;
-      b/line-width: 6;
+      b/line-width: 3;
       // b/line-offset: -3;
     }
   }
@@ -125,7 +125,7 @@
       text-name: "[name]";
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
-      text-fill: #222;
+      text-fill: #4d80b3;
       text-size: 10;
       text-face-name: @book-fonts;
       #text-line {
@@ -148,7 +148,7 @@
       text-name: "[name]";
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
-      text-fill: #222;
+      text-fill: #4d80b3;
       text-size: 10;
       text-face-name: @book-fonts;
       #text-line {

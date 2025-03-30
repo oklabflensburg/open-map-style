@@ -1,5 +1,5 @@
-@ferry-route: #d9ecf9;
-@ferry-route-text: #595d61;
+@ferry-route: #e5edf2;
+@ferry-route-text: #406f90;
 
 #ferry-routes {
   [zoom >= 8] {
