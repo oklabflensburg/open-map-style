@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Parameters>
+    <Parameter name="bounds">7.8058,53.3292,11.3709,55.0831</Parameter>
+    <Parameter name="center">9.6131,54.1994,8</Parameter>
+    <Parameter name="format"><![CDATA[png24]]></Parameter>
+    <Parameter name="minzoom">0</Parameter>
+    <Parameter name="maxzoom">20</Parameter>
+    <Parameter name="scale">1</Parameter>
+    <Parameter name="metatile">2</Parameter>
+    <Parameter name="id"><![CDATA[sh_dgm1_hvd]]></Parameter>
+    <Parameter name="_updated">1743590849000</Parameter>
+    <Parameter name="name"><![CDATA[sh_dgm1_hvd]]></Parameter>
+    <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
+    <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
+  </Parameters>
+  <Style filter-mode="first" name="dgm1-label">
+    <Rule>
+      <MaxScaleDenominator>2500</MaxScaleDenominator>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="16"><![CDATA[[kachel]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>5000</MaxScaleDenominator>
+      <MinScaleDenominator>2500</MinScaleDenominator>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="15"><![CDATA[[kachel]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>12500</MaxScaleDenominator>
+      <MinScaleDenominator>5000</MinScaleDenominator>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="14"><![CDATA[[kachel]]]></TextSymbolizer>
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>50000</MaxScaleDenominator>
+      <MinScaleDenominator>12500</MinScaleDenominator>
+      <TextSymbolizer face-name="Open Sans Bold" fill="#333333" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="1" placement="interior" placement-type="simple" size="13"><![CDATA[[kachel]]]></TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style filter-mode="first" name="dgm1-shape">
+    <Rule>
+      <LineSymbolizer stroke="#333333" stroke-width="0.4" />
+    </Rule>
+  </Style>
+  <Layer name="dgm1" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[dgm1-shape]]></StyleName>
+    <StyleName><![CDATA[dgm1-label]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from sh_dgm1_hvd) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[7.834803395082433,53.34610681229619,11.32946178860766,55.0727341899856]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+</Map>
