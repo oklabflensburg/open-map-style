@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Parameters>
+    <Parameter name="bounds">9.35722,54.751872,9.506715,54.837075</Parameter>
+    <Parameter name="center">9.4369,54.7886,13</Parameter>
+    <Parameter name="format"><![CDATA[png24]]></Parameter>
+    <Parameter name="minzoom">0</Parameter>
+    <Parameter name="maxzoom">20</Parameter>
+    <Parameter name="scale">1</Parameter>
+    <Parameter name="metatile">2</Parameter>
+    <Parameter name="id"><![CDATA[bp]]></Parameter>
+    <Parameter name="_updated">1744726337000</Parameter>
+    <Parameter name="name"><![CDATA[xplan]]></Parameter>
+    <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
+    <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
+  </Parameters>
+  <Style filter-mode="first" name="bp_plan">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#beb8b9" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_plan" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_plan]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_plan) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[dynamic]]></Parameter>
+      <Parameter name="extent"><![CDATA[]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+      <Parameter name="id"><![CDATA[bp_plan]]></Parameter>
+      <Parameter name="project"><![CDATA[bp]]></Parameter>
+      <Parameter name="srs"><![CDATA[+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_gewaesserflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#3399ee" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_gewaesserflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[bp_gewaesserflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_gewaesserflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.396289956957416,54.753287785785666,9.495470388504785,54.81261110703197]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_wasserwirtschaftsflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#3399ee" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_wasserwirtschaftsflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[bp_wasserwirtschaftsflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_wasserwirtschaftsflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.405275900397193,54.76488680098563,9.467372258006437,54.788226466737456]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="so_gewaesser">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#3399ee" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="so_gewaesser" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[so_gewaesser]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.so_gewaesser) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.452387296565131,54.76594373674952,9.454536845054726,54.76636890105094]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_baugebietsteilflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#521a94" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#bbbbbb" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_baugebietsteilflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[bp_baugebietsteilflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_baugebietsteilflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.372180840418237,54.752606379377376,9.495037729451454,54.82310038249572]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_aufschuettungsflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#f1af00" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_aufschuettungsflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_aufschuettungsflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_aufschuettungsflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.416500630809438,54.80205281594711,9.417064189150556,54.8023676410446]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_freiflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#f1af00" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_freiflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_freiflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_freiflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.414823532552203,54.80205479829928,9.41606147056036,54.80278952520422]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_strassenverkehrsflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#999999" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_strassenverkehrsflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_strassenverkehrsflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_strassenverkehrsflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.447086639040498,54.76112987661017,9.46045467192115,54.76709085464287]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_kennzeichnungsflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#da70aa" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_kennzeichnungsflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_kennzeichnungsflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_kennzeichnungsflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.448245198606973,54.7678055442201,9.452399264333687,54.770253660715404]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_nebenanlagenflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#f1af00" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_nebenanlagenflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_nebenanlagenflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_nebenanlagenflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.414983685987384,54.80194860424287,9.416639313177626,54.802748885772296]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_gruenflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#559944" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_gruenflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName><![CDATA[bp_gruenflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_gruenflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.367849719720056,54.75229975044407,9.49455952943919,54.82373697428121]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_ueberbaubaregrundstuecksflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#dddddd" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_ueberbaubaregrundstuecksflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_ueberbaubaregrundstuecksflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_ueberbaubaregrundstuecksflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.447593070104052,54.76193853331477,9.45595249289292,54.76845537971484]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_schutzpflegeentwicklungsflaeche">
+    <Rule>
+      <LineSymbolizer stroke="#559944" stroke-width="0.5" />
+      <PolygonSymbolizer fill="#4c8028" fill-opacity="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_schutzpflegeentwicklungsflaeche" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_schutzpflegeentwicklungsflaeche]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_schutzpflegeentwicklungsflaeche) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.45533944184568,54.763584149195545,9.458636347094908,54.76731091122918]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_baugrenze">
+    <Rule>
+      <PolygonSymbolizer fill="#ff0000" />
+    </Rule>
+  </Style>
+  <Layer name="bp_baugrenze" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_baugrenze]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_baugrenze) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.447593070104052,54.76193853331477,9.45595249289292,54.76845537971484]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+      <Parameter name="id"><![CDATA[bp_baugrenze]]></Parameter>
+      <Parameter name="project"><![CDATA[bp]]></Parameter>
+      <Parameter name="srs"><![CDATA[+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_strassenkoerper">
+    <Rule>
+      <LineSymbolizer stroke="#116688" stroke-width="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_strassenkoerper" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_strassenkoerper]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_strassenkoerper) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.416659067182875,54.80204469374369,9.417086375426544,54.80237358620063]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_wegerecht">
+    <Rule>
+      <LineSymbolizer stroke="#116688" stroke-width="1" />
+    </Rule>
+  </Style>
+  <Layer name="bp_wegerecht" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_wegerecht]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_wegerecht) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.447279908514243,54.76274268104599,9.4547127253428,54.76748599461601]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="bp_anpflanzungbindungerhaltung">
+    <Rule>
+      <MarkersSymbolizer allow-overlap="true" fill="#66dd66" ignore-placement="true" stroke="#881133" width="6" />
+    </Rule>
+  </Style>
+  <Layer name="bp_anpflanzungbindungerhaltung" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[bp_anpflanzungbindungerhaltung]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.bp_anpflanzungbindungerhaltung) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.447361223493887,54.7618541331552,9.458210922226629,54.76855308306163]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="xp_ppo">
+    <Rule>
+      <MarkersSymbolizer allow-overlap="true" fill="#ff4455" ignore-placement="true" stroke="#881133" width="6" />
+    </Rule>
+  </Style>
+  <Layer name="xp_ppo" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[xp_ppo]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.xp_ppo) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.447528782865126,54.762173778580966,9.457831189010363,54.76871069389563]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+  <Style filter-mode="first" name="xp_pto">
+    <Rule>
+      <MarkersSymbolizer allow-overlap="true" fill="#ff4455" ignore-placement="true" stroke="#881133" width="6" />
+    </Rule>
+  </Style>
+  <Layer name="xp_pto" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" status="off">
+    <StyleName><![CDATA[xp_pto]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select * from flensburg.xp_pto) as _subquery]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[geom]]></Parameter>
+      <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+      <Parameter name="extent"><![CDATA[9.4475819403664,54.762331076782935,9.459495115023111,54.76862588622481]]></Parameter>
+      <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
+      <Parameter name="port"><![CDATA[5432]]></Parameter>
+      <Parameter name="user"><![CDATA[oklab]]></Parameter>
+      <Parameter name="host"><![CDATA[localhost]]></Parameter>
+    </Datasource>
+  </Layer>
+</Map>
