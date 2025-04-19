@@ -3,132 +3,156 @@ Map {
 }
 
 #bp_plan {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
   polygon-fill:#beb8b9;
 }
 
 #bp_baugrenze {
-  polygon-fill: red;
+  line-color: #333;
+  line-width: 1;
 }
 
 #bp_gruenflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
   polygon-fill: #594;
 }
 
 #bp_gewaesserflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
   polygon-fill: #3399ee;
 }
 
 #so_gewaesser {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
   polygon-fill: #3399ee;
 }
 
 #bp_wasserwirtschaftsflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
   polygon-fill: #3399ee;
 }
 
 #bp_baugebietsteilflaeche {
-  line-color:#521a94;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#bbbbbb;
+  polygon-fill: #9b9797;
 }
-
 
 #bp_strassenverkehrsflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#999999;
+  polygon-fill: #707070;
 }
 
-
 #bp_anpflanzungbindungerhaltung {
-  marker-width:6;
-  marker-fill:#66dd66;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
-  marker-ignore-placement:true;
+  [zoom >= 16] {
+    marker-fill: transparent;
+    marker-line-width: 1;
+    marker-line-color: #66dd66;
+    marker-allow-overlap: true;
+    marker-ignore-placement: true;
+
+    marker-width: 6;
+  }
+  [zoom >= 17] {
+    marker-width: 10;
+  }
+  [zoom >= 18] {
+    marker-width: 20;
+  }
+  [zoom >= 19] {
+    marker-width: 30;
+  }
+  [zoom >= 20] {
+    marker-width: 40;
+  }
 }
 
 #bp_aufschuettungsflaeche {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#f1af00;
+  polygon-opacity:0.1;
+  polygon-fill: #f4afaf;
+  polygon-pattern-file: url('aufschuettungsflaeche.png');
 }
 
 #bp_freiflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#f1af00;
+  polygon-fill: #f1af00;
 }
 
 #bp_ueberbaubaregrundstuecksflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#ddd;
+  polygon-fill: #ddd;
 }
 
 #bp_nebenanlagenflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#f1af00;
+  polygon-fill: #f1af00;
 }
 
 #bp_kennzeichnungsflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#da70aa;
+  polygon-fill: #ebd0df;
 }
 
 #bp_schutzpflegeentwicklungsflaeche {
-  line-color:#594;
-  line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#4c8028;
+  polygon-fill: #4c8028;
 }
 
 #bp_strassenkoerper {
   line-width:1;
-  line-color:#168;
+  line-color: #707070;
 }
 
 #bp_wegerecht {
   line-width:1;
-  line-color:#168;
+  line-color: red;
 }
 
-#xp_ppo {
-  marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
-  marker-ignore-placement:true;
+#bp_abgrabungsflaeche {
+  line-width:1;
+  line-color: red;
 }
 
-#xp_pto {
-  marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
-  marker-ignore-placement:true;
+#bp_abweichungvonueberbaubarergrundstuecksflaeche {
+  polygon-opacity:1;
+  polygon-fill: red;
+}
+
+#bp_gebaeudeflaeche {
+  polygon-opacity:1;
+  polygon-fill: #808080;
+}
+
+#bp_gemeinbedarfsflaeche {
+  line-width:1;
+  line-color: red;
+}
+
+#bp_gemeinschaftsanlagenflaeche {
+  polygon-opacity:1;
+  polygon-fill: #6b5858;
+}
+
+#bp_landwirtschaftsflaeche {
+  polygon-opacity:1;
+  polygon-fill: #a99e93;
+}
+
+#bp_nebenanlagenausschlussflaeche {
+  polygon-opacity:1;
+  polygon-fill: red;
+}
+
+#bp_sichtflaeche {
+  polygon-opacity:1;
+  polygon-fill: red;
+}
+
+#bp_spielsportanlagenflaeche {
+  polygon-opacity:1;
+  polygon-fill: #a0c8a0;
+}
+
+#bp_waldflaeche {
+  polygon-opacity:1;
+  polygon-fill: #594;
 }

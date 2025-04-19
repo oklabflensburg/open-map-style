@@ -22,18 +22,18 @@
     {
       "geometry": "polygon",
       "extent": [
-        9.445694742919285,
-        54.76112987661017,
-        9.46045467192115,
-        54.77123623533039
+        8.839386728759898,
+        53.42995224113288,
+        10.79137414712974,
+        54.82373697428121
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_plan) as _subquery",
+        "table": "(select * from xplan.bp_plan) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
-        "extent_cache": "dynamic",
-        "extent": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "8.839386728759898,53.42995224113288,10.79137414712974,54.82373697428121",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -48,24 +48,23 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_plan",
-      "layerId": "bp_plan",
-      "status": "off"
+      "layerId": "bp_plan"
     },
     {
       "geometry": "polygon",
       "extent": [
         9.396289956957416,
-        54.753287785785666,
-        9.495470388504785,
-        54.81261110703197
+        53.42995224113288,
+        10.366240482756568,
+        54.81471347567455
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_gewaesserflaeche) as _subquery",
+        "table": "(select * from xplan.bp_gewaesserflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.396289956957416,54.753287785785666,9.495470388504785,54.81261110703197",
+        "extent": "9.396289956957416,53.42995224113288,10.366240482756568,54.81471347567455",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -82,18 +81,18 @@
     {
       "geometry": "polygon",
       "extent": [
-        9.405275900397193,
-        54.76488680098563,
-        9.467372258006437,
-        54.788226466737456
+        9.400517132307064,
+        54.11742645541494,
+        9.986430301148998,
+        54.82321474666474
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_wasserwirtschaftsflaeche) as _subquery",
+        "table": "(select * from xplan.bp_wasserwirtschaftsflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.405275900397193,54.76488680098563,9.467372258006437,54.788226466737456",
+        "extent": "9.400517132307064,54.11742645541494,9.986430301148998,54.82321474666474",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -110,18 +109,18 @@
     {
       "geometry": "polygon",
       "extent": [
-        9.452387296565131,
-        54.76594373674952,
-        9.454536845054726,
-        54.76636890105094
+        8.842270324518529,
+        53.5082540757716,
+        10.789439596705153,
+        54.812695858740895
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.so_gewaesser) as _subquery",
+        "table": "(select * from xplan.so_gewaesser) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.452387296565131,54.76594373674952,9.454536845054726,54.76636890105094",
+        "extent": "8.842270324518529,53.5082540757716,10.789439596705153,54.812695858740895",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -138,18 +137,18 @@
     {
       "geometry": "polygon",
       "extent": [
-        9.372180840418237,
-        54.752606379377376,
-        9.495037729451454,
+        8.839386728759898,
+        53.43017539827122,
+        10.790021613738574,
         54.82310038249572
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_baugebietsteilflaeche) as _subquery",
+        "table": "(select * from xplan.bp_baugebietsteilflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.372180840418237,54.752606379377376,9.495037729451454,54.82310038249572",
+        "extent": "8.839386728759898,53.43017539827122,10.790021613738574,54.82310038249572",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -166,18 +165,46 @@
     {
       "geometry": "polygon",
       "extent": [
-        9.416500630809438,
-        54.80205281594711,
-        9.417064189150556,
-        54.8023676410446
+        9.367849719720056,
+        53.44967392141625,
+        10.79110357217837,
+        54.822045498136234
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_aufschuettungsflaeche) as _subquery",
+        "table": "(select * from xplan.bp_schutzpflegeentwicklungsflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.416500630809438,54.80205281594711,9.417064189150556,54.8023676410446",
+        "extent": "9.367849719720056,53.44967392141625,10.79110357217837,54.822045498136234",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_schutzpflegeentwicklungsflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_schutzpflegeentwicklungsflaeche",
+      "layerId": "bp_schutzpflegeentwicklungsflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.381245078629911,
+        54.346879396408305,
+        10.216802960054986,
+        54.81800044856428
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_aufschuettungsflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.381245078629911,54.346879396408305,10.216802960054986,54.81800044856428",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -189,24 +216,23 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_aufschuettungsflaeche",
-      "layerId": "bp_aufschuettungsflaeche",
-      "status": "off"
+      "layerId": "bp_aufschuettungsflaeche"
     },
     {
       "geometry": "polygon",
       "extent": [
-        9.414823532552203,
-        54.80205479829928,
-        9.41606147056036,
-        54.80278952520422
+        8.842019699473,
+        53.45283274854189,
+        10.37630355268342,
+        54.82237252945587
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_freiflaeche) as _subquery",
+        "table": "(select * from xplan.bp_freiflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.414823532552203,54.80205479829928,9.41606147056036,54.80278952520422",
+        "extent": "8.842019699473,53.45283274854189,10.37630355268342,54.82237252945587",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -218,24 +244,51 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_freiflaeche",
-      "layerId": "bp_freiflaeche",
-      "status": "off"
+      "layerId": "bp_freiflaeche"
     },
     {
       "geometry": "polygon",
       "extent": [
-        9.447086639040498,
-        54.76112987661017,
-        9.46045467192115,
-        54.76709085464287
+        9.376284210128548,
+        53.43017539827122,
+        10.78991296568956,
+        54.82284470121905
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_strassenverkehrsflaeche) as _subquery",
+        "table": "(select * from xplan.bp_ueberbaubaregrundstuecksflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.447086639040498,54.76112987661017,9.46045467192115,54.76709085464287",
+        "extent": "9.376284210128548,53.43017539827122,10.78991296568956,54.82284470121905",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_ueberbaubaregrundstuecksflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_ueberbaubaregrundstuecksflaeche",
+      "layerId": "bp_ueberbaubaregrundstuecksflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.134332591378982,
+        53.4306186489519,
+        10.79137414712974,
+        54.82269122996887
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_strassenverkehrsflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.134332591378982,53.4306186489519,10.79137414712974,54.82269122996887",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -247,24 +300,23 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_strassenverkehrsflaeche",
-      "layerId": "bp_strassenverkehrsflaeche",
-      "status": "off"
+      "layerId": "bp_strassenverkehrsflaeche"
     },
     {
       "geometry": "polygon",
       "extent": [
-        9.448245198606973,
-        54.7678055442201,
-        9.452399264333687,
-        54.770253660715404
+        9.371542760351817,
+        53.5082540757716,
+        10.187493886249657,
+        54.82373697428121
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_kennzeichnungsflaeche) as _subquery",
+        "table": "(select * from xplan.bp_kennzeichnungsflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.448245198606973,54.7678055442201,9.452399264333687,54.770253660715404",
+        "extent": "9.371542760351817,53.5082540757716,10.187493886249657,54.82373697428121",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -276,24 +328,23 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_kennzeichnungsflaeche",
-      "layerId": "bp_kennzeichnungsflaeche",
-      "status": "off"
+      "layerId": "bp_kennzeichnungsflaeche"
     },
     {
       "geometry": "polygon",
       "extent": [
-        9.414983685987384,
-        54.80194860424287,
-        9.416639313177626,
-        54.802748885772296
+        9.376722922983925,
+        53.43017539827122,
+        10.788727516568,
+        54.821917022164115
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_nebenanlagenflaeche) as _subquery",
+        "table": "(select * from xplan.bp_nebenanlagenflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.414983685987384,54.80194860424287,9.416639313177626,54.802748885772296",
+        "extent": "9.376722922983925,53.43017539827122,10.788727516568,54.821917022164115",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -305,24 +356,23 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_nebenanlagenflaeche",
-      "layerId": "bp_nebenanlagenflaeche",
-      "status": "off"
+      "layerId": "bp_nebenanlagenflaeche"
     },
     {
       "geometry": "polygon",
       "extent": [
         9.367849719720056,
-        54.75229975044407,
-        9.49455952943919,
+        53.42999706542378,
+        10.791170584376712,
         54.82373697428121
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_gruenflaeche) as _subquery",
+        "table": "(select * from xplan.bp_gruenflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.367849719720056,54.75229975044407,9.49455952943919,54.82373697428121",
+        "extent": "9.367849719720056,53.42999706542378,10.791170584376712,54.82373697428121",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -339,75 +389,381 @@
     {
       "geometry": "polygon",
       "extent": [
-        9.447593070104052,
-        54.76193853331477,
-        9.45595249289292,
-        54.76845537971484
+        9.445664096054212,
+        53.45298684851316,
+        10.375854302302509,
+        54.81915155335259
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_ueberbaubaregrundstuecksflaeche) as _subquery",
+        "table": "(select * from xplan.bp_waldflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.447593070104052,54.76193853331477,9.45595249289292,54.76845537971484",
+        "extent": "9.445664096054212,53.45298684851316,10.375854302302509,54.81915155335259",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
         "host": "localhost"
       },
-      "id": "bp_ueberbaubaregrundstuecksflaeche",
+      "id": "bp_waldflaeche",
       "class": "",
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "bp_ueberbaubaregrundstuecksflaeche",
-      "layerId": "bp_ueberbaubaregrundstuecksflaeche",
-      "status": "off"
+      "name": "bp_waldflaeche",
+      "layerId": "bp_waldflaeche"
     },
     {
       "geometry": "polygon",
       "extent": [
-        9.45533944184568,
-        54.763584149195545,
-        9.458636347094908,
-        54.76731091122918
+        9.4524417272698,
+        54.759778710978445,
+        9.491553342851418,
+        54.81580893510975
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_schutzpflegeentwicklungsflaeche) as _subquery",
+        "table": "(select * from xplan.bp_abgrabungsflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.45533944184568,54.763584149195545,9.458636347094908,54.76731091122918",
+        "extent": "9.4524417272698,54.759778710978445,9.491553342851418,54.81580893510975",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
         "host": "localhost"
       },
-      "id": "bp_schutzpflegeentwicklungsflaeche",
+      "id": "bp_abgrabungsflaeche",
       "class": "",
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "bp_schutzpflegeentwicklungsflaeche",
-      "layerId": "bp_schutzpflegeentwicklungsflaeche",
-      "status": "off"
+      "name": "bp_abgrabungsflaeche",
+      "layerId": "bp_abgrabungsflaeche"
     },
     {
+      "geometry": "polygon",
       "extent": [
-        9.447593070104052,
-        54.76193853331477,
-        9.45595249289292,
-        54.76845537971484
+        10.122093309973634,
+        54.349549662202875,
+        10.123210138432572,
+        54.35007729802765
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_baugrenze) as _subquery",
+        "table": "(select * from xplan.bp_abweichungvonueberbaubarergrundstuecksflaeche) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.447593070104052,54.76193853331477,9.45595249289292,54.76845537971484",
+        "extent": "10.122093309973634,54.349549662202875,10.123210138432572,54.35007729802765",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_abweichungvonueberbaubarergrundstuecksflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_abweichungvonueberbaubarergrundstuecksflaeche",
+      "layerId": "bp_abweichungvonueberbaubarergrundstuecksflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.39380617102188,
+        53.45448355032486,
+        10.462004522290195,
+        54.82195839909099
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_gemeinbedarfsflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.39380617102188,53.45448355032486,10.462004522290195,54.82195839909099",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_gemeinbedarfsflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_gemeinbedarfsflaeche",
+      "layerId": "bp_gemeinbedarfsflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.389318650572369,
+        53.45349943570194,
+        10.378634227316695,
+        54.820421271429005
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_gemeinschaftsanlagenflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.389318650572369,53.45349943570194,10.378634227316695,54.820421271429005",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_gemeinschaftsanlagenflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_gemeinschaftsanlagenflaeche",
+      "layerId": "bp_gemeinschaftsanlagenflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.39726406560059,
+        54.21749557561014,
+        9.859597833394876,
+        54.80119269104083
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_landwirtschaftsflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.39726406560059,54.21749557561014,9.859597833394876,54.80119269104083",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_landwirtschaftsflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_landwirtschaftsflaeche",
+      "layerId": "bp_landwirtschaftsflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        10.017721845198713,
+        53.50872488441181,
+        10.021011563263164,
+        53.51192681264067
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_nebenanlagenausschlussflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "10.017721845198713,53.50872488441181,10.021011563263164,53.51192681264067",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_nebenanlagenausschlussflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_nebenanlagenausschlussflaeche",
+      "layerId": "bp_nebenanlagenausschlussflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.405960919272983,
+        53.54076844343789,
+        10.233967464594588,
+        54.8116475331847
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_sichtflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.405960919272983,53.54076844343789,10.233967464594588,54.8116475331847",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_sichtflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_sichtflaeche",
+      "layerId": "bp_sichtflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.406866423654913,
+        54.30627567459724,
+        9.641285378364962,
+        54.80418178789752
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_spielsportanlagenflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.406866423654913,54.30627567459724,9.641285378364962,54.80418178789752",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_spielsportanlagenflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_spielsportanlagenflaeche",
+      "layerId": "bp_spielsportanlagenflaeche"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.134980026993658,
+        53.43009355887158,
+        10.789102112705114,
+        54.822584543565185
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_wegerecht) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.134980026993658,53.43009355887158,10.789102112705114,54.822584543565185",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_wegerecht",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_wegerecht",
+      "layerId": "bp_wegerecht"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        9.62885210638681,
+        54.299671563025335,
+        10.023144276740634,
+        54.63070306480519
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_gebaeudeflaeche) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.62885210638681,54.299671563025335,10.023144276740634,54.63070306480519",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_gebaeudeflaeche",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_gebaeudeflaeche",
+      "layerId": "bp_gebaeudeflaeche"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        9.416659067182875,
+        54.80204469374369,
+        9.417086375426544,
+        54.80237358620063
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_strassenkoerper) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.416659067182875,54.80204469374369,9.417086375426544,54.80237358620063",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_strassenkoerper",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_strassenkoerper",
+      "layerId": "bp_strassenkoerper"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        9.400806378302498,
+        53.47176974963327,
+        10.789908122093964,
+        54.79948978030588
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_abstandsmass) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.400806378302498,53.47176974963327,10.789908122093964,54.79948978030588",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "bp_abstandsmass",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "bp_abstandsmass",
+      "layerId": "bp_abstandsmass"
+    },
+    {
+      "extent": [
+        9.134473644914149,
+        53.43017539827122,
+        10.78991296568956,
+        54.82290190936229
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from xplan.bp_baugrenze) as _subquery",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "9.134473644914149,53.43017539827122,10.78991296568956,54.82290190936229",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -423,81 +779,23 @@
       "advanced": {},
       "name": "bp_baugrenze",
       "layerId": "bp_baugrenze",
-      "status": "off"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        9.416659067182875,
-        54.80204469374369,
-        9.417086375426544,
-        54.80237358620063
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "(select * from flensburg.bp_strassenkoerper) as _subquery",
-        "key_field": "",
-        "geometry_field": "geom",
-        "extent_cache": "auto",
-        "extent": "9.416659067182875,54.80204469374369,9.417086375426544,54.80237358620063",
-        "dbname": "oklab",
-        "port": "5432",
-        "user": "oklab",
-        "host": "localhost"
-      },
-      "id": "bp_strassenkoerper",
-      "class": "",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "bp_strassenkoerper",
-      "status": "off",
-      "layerId": "bp_strassenkoerper"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        9.447279908514243,
-        54.76274268104599,
-        9.4547127253428,
-        54.76748599461601
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "(select * from flensburg.bp_wegerecht) as _subquery",
-        "key_field": "",
-        "geometry_field": "",
-        "extent_cache": "auto",
-        "extent": "9.447279908514243,54.76274268104599,9.4547127253428,54.76748599461601",
-        "dbname": "oklab",
-        "port": "5432",
-        "user": "oklab",
-        "host": "localhost"
-      },
-      "id": "bp_wegerecht",
-      "class": "",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "bp_wegerecht",
-      "layerId": "bp_wegerecht",
-      "status": "off"
+      "geometry": "linestring"
     },
     {
       "geometry": "point",
       "extent": [
-        9.447361223493887,
-        54.7618541331552,
-        9.458210922226629,
-        54.76855308306163
+        9.369468533985607,
+        53.44996727288183,
+        10.791045726877767,
+        54.82205764804202
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from flensburg.bp_anpflanzungbindungerhaltung) as _subquery",
+        "table": "(select * from xplan.bp_anpflanzungbindungerhaltung) as _subquery",
         "key_field": "",
-        "geometry_field": "geom",
+        "geometry_field": "geometry",
         "extent_cache": "auto",
-        "extent": "9.447361223493887,54.7618541331552,9.458210922226629,54.76855308306163",
+        "extent": "9.369468533985607,53.44996727288183,10.791045726877767,54.82205764804202",
         "dbname": "oklab",
         "port": "5432",
         "user": "oklab",
@@ -509,66 +807,7 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "bp_anpflanzungbindungerhaltung",
-      "layerId": "bp_anpflanzungbindungerhaltung",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        9.447528782865126,
-        54.762173778580966,
-        9.457831189010363,
-        54.76871069389563
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "(select * from flensburg.xp_ppo) as _subquery",
-        "key_field": "",
-        "geometry_field": "",
-        "extent_cache": "auto",
-        "extent": "9.447528782865126,54.762173778580966,9.457831189010363,54.76871069389563",
-        "dbname": "oklab",
-        "port": "5432",
-        "user": "oklab",
-        "host": "localhost"
-      },
-      "id": "xp_ppo",
-      "class": "",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "xp_ppo",
-      "status": "off",
-      "layerId": "xp_ppo"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        9.4475819403664,
-        54.762331076782935,
-        9.459495115023111,
-        54.76862588622481
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "(select * from flensburg.xp_pto) as _subquery",
-        "key_field": "",
-        "geometry_field": "geom",
-        "extent_cache": "auto",
-        "extent": "9.4475819403664,54.762331076782935,9.459495115023111,54.76862588622481",
-        "dbname": "oklab",
-        "port": "5432",
-        "user": "oklab",
-        "host": "localhost"
-      },
-      "id": "xp_pto",
-      "class": "",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "xp_pto",
-      "status": "off",
-      "layerId": "xp_pto"
+      "layerId": "bp_anpflanzungbindungerhaltung"
     }
   ],
   "scale": 1,
