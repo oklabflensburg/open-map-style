@@ -3669,24 +3669,24 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [feature = 'aeroway_runway'][zoom >= 11] {
     polygon-fill: @runway-fill;
     [int_surface = 'unpaved'] {
-      polygon-pattern-file: url('symbols/unpaved/unpaved_aeroway-fill.svg');
-      polygon-pattern-alignment: global;
+      // polygon-pattern-file: url('symbols/unpaved/unpaved_aeroway-fill.svg');
+      // polygon-pattern-alignment: global;
     }
   }
 
   [feature = 'aeroway_taxiway'][zoom >= 13] {
     polygon-fill: @taxiway-fill;
     [int_surface = 'unpaved'] {
-      polygon-pattern-file: url('symbols/unpaved/unpaved_aeroway-fill.svg');
-      polygon-pattern-alignment: global;
+      // polygon-pattern-file: url('symbols/unpaved/unpaved_aeroway-fill.svg');
+      // polygon-pattern-alignment: global;
     }
   }
 
   [feature = 'aeroway_helipad'][zoom >= 16] {
     polygon-fill: @helipad-fill;
     [int_surface = 'unpaved'] {
-      polygon-pattern-file: url('symbols/unpaved/unpaved_aeroway-fill.svg');
-      polygon-pattern-alignment: global;
+      // polygon-pattern-file: url('symbols/unpaved/unpaved_aeroway-fill.svg');
+      // polygon-pattern-alignment: global;
     }
   }
 }
@@ -3972,7 +3972,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [int_surface = 'unpaved'] {
           // line-pattern-type: repeat;
           // line-pattern-alignment: global;
-          line-pattern-file: url("symbols/unpaved/unpaved_aeroway-fill.svg"); 
+          // line-pattern-file: url("symbols/unpaved/unpaved_aeroway-fill.svg"); 
           line-width: 2;
           [zoom >= 12] { line-width: 4; }
           [zoom >= 13] { line-width: 6; }
@@ -3985,15 +3985,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   }
   [aeroway = 'taxiway'] {
     [zoom >= 11] {
-      ::casing[bridge = true][zoom >= 14] {
-        line-width: 4 + 2*@secondary-casing-width-z14;
-        line-color: @bridge-casing;
-        line-join: round;
-        [zoom >= 15] { line-width: 6 + 2*@secondary-casing-width-z15; }
-        [zoom >= 16] { line-width: 8 + 2*@secondary-casing-width-z16; }
-        [zoom >= 17] { line-width: 8 + 2*@secondary-casing-width-z17; }
-        [zoom >= 18] { line-width: 8 + 2*@secondary-casing-width-z18; }
-      }
+
       ::fill {
         [int_surface != 'unpaved'] {
           line-color: @taxiway-fill ;

@@ -2,23 +2,23 @@
   polygon-fill: @natural_sand;
 
   /* Wasser */
-  [fclass = 'water'] {
+  [natural = 'water'] {
     polygon-fill: @natural_water;
   }
   
-  [fclass = 'park'] {
+  [natural = 'park'] {
     polygon-fill: @natural_park;
   }
   
   /* Heidelandschaft */
-  [fclass = 'heath'] {
+  [natural = 'heath'] {
     [zoom >= 11] {
       polygon-fill: @natural_heath;
     }
   }
 
   /* Sand */
-  [fclass = 'sand'] {
+  [natural = 'sand'] {
     [zoom >= 11] {
       polygon-fill: @natural_sand;
     }

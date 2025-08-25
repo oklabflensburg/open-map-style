@@ -1,0 +1,373 @@
+{
+  "bounds": [
+    7.8685,
+    53.3591,
+    11.3132,
+    55.0574
+  ],
+  "center": [
+    9.6982,
+    54.3005,
+    9
+  ],
+  "format": "png24",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 20,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "base.mss",
+    "buildings.mss",
+    "roads.mss",
+    "landuse.mss",
+    "water.mss",
+    "waterway.mss",
+    "natural.mss",
+    "aeroways.mss",
+    "admin.mss",
+    "places.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, \"natural\" from planet_osm_polygon where 'natural' is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "natural",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "natural",
+      "layerId": "natural"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, landuse from planet_osm_polygon where landuse is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "landuse",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "landuse",
+      "layerId": "landuse"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999749438,
+        -78.7385903,
+        179.9999999749438,
+        85.051
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from water_polygons) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "-20037508.34,-14776649.535690924,20037508.34,20037508.34",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "waterpolygons",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "waterpolygons",
+      "layerId": "waterpolygons"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, water from planet_osm_polygon where water is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "water",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water",
+      "layerId": "water"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, aeroway from planet_osm_polygon where aeroway is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "aerowaypolygons",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "aerowaypolygons",
+      "layerId": "aerowaypolygons"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -20.071233,
+        52.55754999908654,
+        25.2232488,
+        60.436329601712266
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, aeroway from planet_osm_line where aeroway is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "-2234319.437153149,6901572.342402028,2807839.212568049,8497529.188935762",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "aerowaylines",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "aerowaylines",
+      "layerId": "aerowaylines"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, aeroway from planet_osm_point where aeroway is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "aerowaypoints",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "aerowaypoints",
+      "layerId": "aerowaypoints"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -20.071233,
+        52.55754999908654,
+        25.2232488,
+        60.436329601712266
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, highway, bridge, tunnel, oneway, name from planet_osm_line where highway is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "-2234319.437153149,6901572.342402028,2807839.212568049,8497529.188935762",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "roads",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads",
+      "layerId": "roads"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, name, waterway from planet_osm_polygon where waterway is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "waterways",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "waterways",
+      "layerId": "waterways"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, building from planet_osm_polygon where building is not null) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "buildings",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "buildings",
+      "layerId": "buildings"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        6.323888899999999,
+        53.35443469910685,
+        11.672385999999998,
+        55.48270549958272
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT way FROM planet_osm_line WHERE boundary = 'administrative' AND admin_level = '2') as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "703972.092181235,7048829.751007756,1299364.0658625353,7456118.687191764",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "admin",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "admin",
+      "layerId": "admin"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        5.115457999999999,
+        53.122173599092584,
+        25.1965582,
+        60.436329601712266
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, place, name from planet_osm_point where place is not null\n) as _subquery",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "569450.1797343777,7005628.781071547,2804868.028567082,8497529.188935762",
+        "dbname": "oklab",
+        "port": "5432",
+        "user": "oklab",
+        "host": "localhost"
+      },
+      "id": "places",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "places",
+      "layerId": "places"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "attribution": ""
+}

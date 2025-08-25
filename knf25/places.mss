@@ -1,9 +1,8 @@
-#places[fclass='city'][zoom>6][zoom<14] {
+#places[place='city'][zoom>6][zoom<14] {
   text-face-name:@fonts;
   text-name:"[name]";
-  text-fill: #ddd8d8;
-  text-halo-fill:rgba(255,255,255,0.8);
-  text-halo-radius:2;
+  text-fill: #F4EFEA;
+  text-halo-fill:darken(#F4EFEA, 10);
   text-transform:uppercase;
   
   [zoom=11] {
@@ -22,12 +21,11 @@
   }
 }
 
-#places[fclass='town'][zoom>6][zoom<15] {
+#places[place='town'][zoom>6][zoom<15] {
   text-face-name:@fonts;
   text-name:"[name]";
-  text-fill: #ddd8d8;
-  text-halo-fill:rgba(255,255,255,0.8);
-  text-halo-radius:2;
+  text-fill: #F4EFEA;
+  text-halo-fill:darken(#F4EFEA, 10);
   text-transform:uppercase;
   text-size:9;
   
@@ -52,14 +50,13 @@
   }
 }
 
-#places[fclass='hamlet'][zoom>13][zoom<18],
-#places[fclass='suburb'][zoom>13][zoom<18],
-#places[fclass='neighbourhood'][zoom>14][zoom<18] {
+#places[place='hamlet'][zoom>13],
+#places[place='suburb'][zoom>13],
+#places[place='neighbourhood'][zoom>14] {
   text-face-name: @fonts;
   text-name:"[name]";
-  text-fill: #e3ac95;
-  text-halo-fill:rgba(255,255,255,0.8);
-  text-halo-radius:2;
+  text-fill: #F4EFEA;
+  text-halo-fill:darken(#F4EFEA, 10);
   text-wrap-width:100;
   text-wrap-before:true;
   
