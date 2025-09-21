@@ -3,14 +3,14 @@
 <Map background-color="rgba(0, 0, 0, 0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
   <Parameters>
     <Parameter name="bounds">7.868514562,53.3590675115,11.3132037822,55.0573747014</Parameter>
-    <Parameter name="center">9.8437,54.2652,3</Parameter>
+    <Parameter name="center">9.4346,54.7875,12</Parameter>
     <Parameter name="format"><![CDATA[png24]]></Parameter>
     <Parameter name="minzoom">0</Parameter>
     <Parameter name="maxzoom">20</Parameter>
     <Parameter name="scale">1</Parameter>
     <Parameter name="metatile">1</Parameter>
     <Parameter name="id"><![CDATA[shalkislot]]></Parameter>
-    <Parameter name="_updated">1742197829000</Parameter>
+    <Parameter name="_updated">1758383708000</Parameter>
     <Parameter name="name"><![CDATA[sh_parcel]]></Parameter>
     <Parameter name="attribution"><![CDATA[ © GeoBasis-DE/LVermGeo SH/CC BY 4.0]]></Parameter>
     <Parameter name="version"><![CDATA[0.2.1]]></Parameter>
@@ -92,15 +92,12 @@
     <Datasource>
       <Parameter name="type"><![CDATA[postgis]]></Parameter>
       <Parameter name="table"><![CDATA[(SELECT
-        CASE
-            WHEN flstnrnen IS NOT NULL THEN flstnrzae::text || '/' || flstnrnen::text
-            ELSE flstnrzae::text
-        END AS parcel_number,
-        ST_Area(ST_Transform(ST_GeomFromEWKB(geometrie), 3587)) / 10000 AS area_hectares,
-        geometrie
-    FROM flurstueck) as _subquery]]></Parameter>
+        parcel_number,
+        ST_Area(ST_Transform(ST_GeomFromEWKB(wkb_geometry), 3587)) / 10000 AS area_hectares,
+        wkb_geometry
+    FROM sh_alkis_parcel) as _subquery]]></Parameter>
       <Parameter name="key_field"><![CDATA[]]></Parameter>
-      <Parameter name="geometry_field"><![CDATA[geometrie]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
       <Parameter name="extent_cache"><![CDATA[dynamic]]></Parameter>
       <Parameter name="extent"><![CDATA[]]></Parameter>
       <Parameter name="dbname"><![CDATA[oklab]]></Parameter>
