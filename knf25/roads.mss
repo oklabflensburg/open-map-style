@@ -1,4 +1,19 @@
 #roads::line {
+  [zoom >= 14] {
+    line-color: @roads_steps;
+    line-dasharray: 2, 2;
+    line-cap: butt;
+    line-width: 0.5;
+  }
+
+  [zoom = 16] {
+    line-width: 1;
+  }
+
+  [zoom >= 17] {
+    line-width: 1.5;
+  }
+
   /* Treppen */
   [highway = 'steps'] {
     line-color: @roads_steps;
