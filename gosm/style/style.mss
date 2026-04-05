@@ -3,37 +3,37 @@ Map {
 }
 
 @base-100: #ffffff;
-@base-99: #fdfdfc;
-@base-98: #fbfbfa;
-@base-97: #f8f8f7;
-@base-96: #f6f6f4;
-@base-95: #f3f3f1;
-@base-94: #f1f1ef;
-@base-92: #ecebe8;
-@base-90: #e6e5e2;
-@base-88: #dfdedb;
-@base-84: #d2d1cd;
-@base-80: #c7c5c0;
-@base-76: #bbb9b5;
-@base-72: #afada8;
-@base-68: #a3a19c;
-@base-64: #97958f;
-@base-60: #8c8984;
-@base-56: #807d79;
-@base-52: #74716d;
-@base-48: #696662;
-@base-44: #5e5b57;
-@base-40: #534f4c;
-@base-36: #484542;
-@base-32: #3f3c39;
+@base-99: #fdfdfd;
+@base-98: #fbfbfb;
+@base-97: #f8f8f8;
+@base-96: #f6f6f6;
+@base-95: #f3f3f3;
+@base-94: #f1f1f1;
+@base-92: #ececec;
+@base-90: #e6e6e6;
+@base-88: #dfdfdf;
+@base-84: #d2d2d2;
+@base-80: #c6c6c6;
+@base-76: #bababa;
+@base-72: #aeaeae;
+@base-68: #a2a2a2;
+@base-64: #969696;
+@base-60: #8a8a8a;
+@base-56: #7e7e7e;
+@base-52: #727272;
+@base-48: #686868;
+@base-44: #5c5c5c;
+@base-40: #525252;
+@base-36: #484848;
+@base-32: #3e3e3e;
 
-@land-color: #f5f4f1;
+@land-color: #f4f4f4;
 @background: @land-color;
-@water-color: #dde3e6;
+@water-color: #e0e0e0;
 @water: @water-color;
-@water-deep: #c8d1d6;
-@water-line: #b3bdc4;
-@water-text-soft: #7c868d;
+@water-deep: #d0d0d0;
+@water-line: #b8b8b8;
+@water-text-soft: #858585;
 
 @road_major: @base-100;
 @road_minor: @base-99;
@@ -45,26 +45,26 @@ Map {
 @road_marking: @base-94;
 @road_marking_light: @base-98;
 
-@building_fill: #d8d5d0;
-@building_line: #b6b2ac;
+@building_fill: #d6d6d6;
+@building_line: #b4b4b4;
 
-@park: #ecefe9;
-@forest: #e4e8e1;
-@grass: #eef1ec;
-@farmland: #efefe8;
-@industrial: #e7e5e2;
-@residential: #eceae7;
-@cemetery: #e7ebe6;
-@sand-neutral: #f0ede6;
-@bare-ground: #ece8e1;
+@park: #ededed;
+@forest: #e5e5e5;
+@grass: #efefef;
+@farmland: #eeeeee;
+@industrial: #e6e6e6;
+@residential: #ebebeb;
+@cemetery: #e8e8e8;
+@sand-neutral: #ededed;
+@bare-ground: #e8e8e8;
 
 @railway: @base-60;
-@boundary: #c1bdb8;
-@boundary-strong: #aaa59f;
+@boundary: #bebebe;
+@boundary-strong: #a6a6a6;
 
-@label: #56534f;
-@label-light: #7a7672;
-@label-strong: #403d3a;
+@label: #545454;
+@label-light: #787878;
+@label-strong: #3e3e3e;
 @halo: rgba(255,255,255,0.88);
 
 @standard-halo-radius: 1.2;

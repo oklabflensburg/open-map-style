@@ -462,7 +462,6 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
     [admin_level = '6'] { text-fill: @county-labels; }
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-largest-bbox-only: false;
     text-placement: line;
     text-spacing: 750;
     text-repeat-distance: 250;
@@ -482,7 +481,6 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
   }
   text-halo-radius: @standard-halo-radius;
   text-halo-fill: @standard-halo-fill;
-  text-largest-bbox-only: false;
   text-placement: line;
   text-spacing: 750;
   text-repeat-distance: 250;
@@ -509,14 +507,7 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
       // inner line
       ::wideline {
         opacity: 0.15;
-        line-width: 3.6;
-        // Unlike planet_osm_line, planet_osm_polygon does not preserves the
-        // original direction of the OSM way: Following OGS at
-        // https://www.opengeospatial.org/standards/sfa always at the left
-        // is the interior and at the right the exterior of the polygon.(This
-        // also applies to inner rings of multipolygons.) So a negative
-        // line-offset is always an offset to the inner side of the polygon.
-        line-offset: -0.9;
+        line-width: 1.8;
         line-color: @protected-area;
         [boundary = 'aboriginal_lands'] {
           line-color: @aboriginal;
@@ -524,12 +515,10 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
         line-join: round;
         line-cap: round;
         [zoom >= 12] {
-          line-width: 4;
-          line-offset: -1;
+          line-width: 2;
         }
         [zoom >= 14] {
-          line-width: 6;
-          line-offset: -2;
+          line-width: 3;
         }
       }
       // outer line

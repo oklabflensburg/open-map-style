@@ -1,5 +1,5 @@
 @water-text: @water-text-soft;
-@glacier: #edf1f2;
+@glacier: #efefef;
 @glacier-line: @water-line;
 
 @waterway-text-repeat-distance: 200;

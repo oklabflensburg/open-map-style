@@ -1,29 +1,29 @@
 // --- Parks, woods, other green things ---
 
-@grass: #eef1ec;        // also grassland, meadow, village_green, garden, allotments
-@scrub: #e7eae3;
-@forest: #e4e8e1;
+@grass: #efefef;        // also grassland, meadow, village_green, garden, allotments
+@scrub: #e9e9e9;
+@forest: #e5e5e5;
 @forest-text: @label-light;
-@park: #ecefe9;
-@allotments: #e8ece6;
-@orchard: #e6ebe3; // also vineyard, plant_nursery
+@park: #ededed;
+@allotments: #e9e9e9;
+@orchard: #e8e8e8; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
 // --- "Base" landuses ---
 
 @built-up-lowzoom: @base-84;
 @built-up-z12: @base-90;
-@residential: #eceae7;
+@residential: #ebebeb;
 @residential-line: @base-76;
-@retail: #ece9e6;
+@retail: #ebebeb;
 @retail-line: @base-76;
-@commercial: #e9e6e3;
+@commercial: #e7e7e7;
 @commercial-line: @base-76;
-@industrial: #e7e5e2;
+@industrial: #e6e6e6;
 @industrial-line: @base-76;
-@farmland: #efefe8;
+@farmland: #eeeeee;
 @farmland-line: @base-80;
-@farmyard: #ece7df;
+@farmyard: #e8e8e8;
 @farmyard-line: @base-76;
 
 // line width used for faint outline of larger landuses, i.e. where outline is not an 
@@ -45,11 +45,11 @@
 // --- Other ----
 
 @bare_ground: @bare-ground;
-@campsite: #ecefe7; // also caravan_site, picnic_site
-@cemetery: #e7ebe6; // also grave_yard
+@campsite: #ececec; // also caravan_site, picnic_site
+@cemetery: #e8e8e8; // also grave_yard
 @construction: @base-84; // also brownfield
-@heath: #e8e9e1;
-@mud: rgba(186, 181, 173, 0.28);
+@heath: #e8e8e8;
+@mud: rgba(181, 181, 181, 0.28);
 @place_of_worship: @base-88; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
 @leisure: lighten(@park, 5%);
@@ -68,7 +68,7 @@
 
 // --- Sports ---
 
-@pitch: #e5ebe6;
+@pitch: #e7e7e7;
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
 @golf_course: @campsite;

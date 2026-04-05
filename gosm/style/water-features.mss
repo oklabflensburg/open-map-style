@@ -95,23 +95,19 @@
 
 #marinas-area {
   [zoom >= 14] {
-    a/line-width: 1;
-    a/line-offset: -0.5;
+    a/line-width: 0.5;
     a/line-color: @water-line;
     a/line-opacity: 0.1;
     a/line-join: round;
     a/line-cap: round;
-    b/line-width: 3;
-    b/line-offset: -1.5;
+    b/line-width: 1.5;
     b/line-color: @water-line;
     b/line-opacity: 0.1;
     b/line-join: round;
     b/line-cap: round;
     [zoom >= 17] {
-      a/line-width: 2;
-      a/line-offset: -1;
-      b/line-width: 6;
-      b/line-offset: -3;
+      a/line-width: 1;
+      b/line-width: 3;
     }
   }
 }
