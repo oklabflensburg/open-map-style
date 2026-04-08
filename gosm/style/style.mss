@@ -29,11 +29,11 @@ Map {
 
 @land-color: #fbfbfb;
 @background: @land-color;
-@water-color: #f1f1f1;
+@water-color: #93daff;
 @water: @water-color;
-@water-deep: #e6e6e6;
-@water-line: #d0d0d0;
-@water-text-soft: #a0a0a0;
+@water-deep: #78ccef;
+@water-line: #5fbfe8;
+@water-text-soft: #3c97be;
 
 @road_major: @base-100;
 @road_minor: @base-99;
